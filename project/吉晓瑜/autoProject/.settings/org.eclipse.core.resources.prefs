@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/com/webtest/core/BaseTest.java=GBK
+encoding//src/com/webtest/dataprovider/MysqlDataProvider.java=GBK
+encoding//src/com/webtest/demo/Admin_Login.java=UTF-8
+encoding/<project>=GBK

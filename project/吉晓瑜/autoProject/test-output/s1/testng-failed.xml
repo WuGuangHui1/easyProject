@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [s1]">
+  <test thread-count="5" name="t1(failed)">
+    <classes>
+      <class name="com.webtest.demo.RoqisoftTest">
+        <parameter name="select" value="2"/>
+        <parameter name="stitle" value="拉萨"/>
+        <parameter name="fileurl" value="E:\\demo\\i.png"/>
+        <parameter name="aapwd" value="123"/>
+        <parameter name="photo" value="E:\\demo\\Hua.jpg"/>
+        <parameter name="tag" value="西藏"/>
+        <parameter name="row" value="1"/>
+        <parameter name="newname" value="babala"/>
+        <parameter name="article" value="拉萨号称日光城，基本上每天万里层云，千山暮雪，喇嘛红衣，海子傍雪山，村庄绕经幡。没有夏季的雨雾朦胧，看到秀美雪峰的概率也会大大增加，此时的林芝不再只有江南水乡般的小家碧玉，而是多了几分磅礴大气苍茫肃穆，此时各种高原湖泊也不再水波荡漾，取而代之的是如天空般湛蓝的冰雪奇观。"/>
+        <parameter name="frame" value="ke-edit-iframe"/>
+        <parameter name="discuss" value="非常好，好的不行"/>
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="test3" invocation-numbers="0"/>
+          <include name="test4" invocation-numbers="0"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.demo.RoqisoftTest -->
+    </classes>
+  </test> <!-- t1(failed) -->
+</suite> <!-- Failed suite [s1] -->

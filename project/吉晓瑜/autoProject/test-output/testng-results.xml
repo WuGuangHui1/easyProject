@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25591" started-at="2020-11-10T16:06:10 CST" finished-at="2020-11-10T16:06:36 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25591" started-at="2020-11-10T16:06:10 CST" finished-at="2020-11-10T16:06:36 CST">
+      <class name="com.webtest.demo.Admin_Login">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Admin_Login@3d99d22e]" name="doBeforeClass" is-config="true" duration-ms="5715" started-at="2020-11-10T16:06:10 CST" finished-at="2020-11-10T16:06:16 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin1()[pri:0, instance:com.webtest.demo.Admin_Login@3d99d22e]" name="testLogin1" duration-ms="13075" started-at="2020-11-10T16:06:16 CST" finished-at="2020-11-10T16:06:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin1 -->
+        <test-method status="PASS" signature="testLogin2()[pri:0, instance:com.webtest.demo.Admin_Login@3d99d22e]" name="testLogin2" duration-ms="5690" started-at="2020-11-10T16:06:29 CST" finished-at="2020-11-10T16:06:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin2 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.Admin_Login@3d99d22e]" name="doAfterMethod" is-config="true" duration-ms="1065" started-at="2020-11-10T16:06:34 CST" finished-at="2020-11-10T16:06:36 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.Admin_Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
