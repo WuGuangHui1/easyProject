@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="255" started-at="2020-11-15T18:17:26 CST" finished-at="2020-11-15T18:17:26 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="255" started-at="2020-11-15T18:17:26 CST" finished-at="2020-11-15T18:17:26 CST">
+      <class name="com.webtest.dataprovider.NSDataProvider">
+        <test-method status="PASS" signature="testDB(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.dataprovider.NSDataProvider@3cef309d]" name="testDB" duration-ms="5" started-at="2020-11-15T18:17:26 CST" data-provider="mysql" finished-at="2020-11-15T18:17:26 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wgh123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wgh123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDB -->
+      </class> <!-- com.webtest.dataprovider.NSDataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
