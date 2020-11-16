@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [s1]">
+  <listeners>
+    <listener class-name="com.webtest.listen.JavaMailTestListener"/>
+  </listeners>
+  <test thread-count="5" name="t2(failed)">
+    <classes>
+      <class name="com.webtest.demo.Demo">
+        <methods>
+          <include name="test3"/>
+          <include name="test5"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- com.webtest.demo.Demo -->
+    </classes>
+  </test> <!-- t2(failed) -->
+</suite> <!-- Failed suite [s1] -->
