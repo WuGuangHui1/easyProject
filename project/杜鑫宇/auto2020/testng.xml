@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="s1" verbose="1" parallel="classes">
+<listeners>
+		<listener class-name="com.webtest.core.WebTestListener"></listener>
+</listeners>
+<test name="t2" preserve-order="true">
+	<classes>
+		<class name="com.webtest.demo.Admin_Login"/>
+		<class name="com.webtest.demo.Back_Login"/>
+		
+	</classes>
+</test>
+
+</suite>
