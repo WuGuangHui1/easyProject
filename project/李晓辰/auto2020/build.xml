@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="auto2020" basedir=".">
+    <property name="libs.dir" value="libs"/>
+	
+    <path id="com.webtest.demo.classpath">
+        <!-- adding the saxon jar to your classpath -->
+      <fileset dir="${libs.dir}" includes="*.jar"/>
+    </path>
+
+    <target name="transform">
+        <!-- <mkdir dir="F:/eclipse-workspace-2/SandyTestNg/test-output/"/> -->
+        <xslt in="E:/Study/Practice/auto2020/test-output/testng-results.xml"
+              style="E:/Study/Practice/auto2020/test-output/testng-results.xsl"
+              out="E:/Study/Practice/auto2020/test-output/out/index1.html"
+              classpathref="com.webtest.demo.classpath" processor="SaxonLiaison">
+            <param name="testNgXslt.outputDir" expression="E:/Study/Practice/auto2020/test-output/out" />
+        </xslt>
+    </target>
+</project>
