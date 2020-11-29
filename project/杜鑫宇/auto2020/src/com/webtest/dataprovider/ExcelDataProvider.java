@@ -1,14 +1,15 @@
 package com.webtest.dataprovider;
 
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -20,11 +21,47 @@ import org.testng.annotations.Test;
  */
 
 public class ExcelDataProvider {
+	public static Object getCellFormatValue(Cell cell) {
+		Object cellValue = null;
+		if (cell != null) {
+			// 判断cell类型
 
+			switch (cell.getCellType()) {
+			case NUMERIC: {
+				NumberFormat nf = NumberFormat.getInstance();
+				cellValue = nf.format(cell.getNumericCellValue());
+				if (((String) cellValue).indexOf(",") >= 0) {
+					cellValue = ((String) cellValue).replace(",", "");
+				}
+				break;
+			}
+			case FORMULA: {
+				// 判断cell是否为日期格式
+				if (DateUtil.isCellDateFormatted(cell)) {
+					// 转换为日期格式YYYY-mm-dd
+					cellValue = cell.getDateCellValue();
+				} else {
+					// 数字
+					cellValue = Integer.valueOf((int) cell.getNumericCellValue());
 
+				}
+				break;
+			}
+			case STRING: {
+				cellValue = cell.getRichStringCellValue().getString();
+				break;
+			}
+			default:
+				cellValue = "";
+			}
+		} else {
+			cellValue = "";
+		}
+		return cellValue;
+	}
 
-	public Object[][] getTestDataByExcel(String fileName, String sheetName)
-			throws IOException {
+	@DataProvider
+	public static Object[][] getTestDataByExcel(String fileName, String sheetName) throws IOException {
 		File file = new File(fileName);
 		FileInputStream inputstream = new FileInputStream(file);
 		Workbook wbook = null;
@@ -32,7 +69,7 @@ public class ExcelDataProvider {
 		System.out.println(fileExtensionName);
 		if (fileExtensionName.equals(".xlsx")) {
 			wbook = new XSSFWorkbook(inputstream);
-		
+
 		} else if (fileExtensionName.equals(".xls")) {
 			wbook = new HSSFWorkbook(inputstream);
 		}
@@ -47,7 +84,7 @@ public class ExcelDataProvider {
 			String fields[] = new String[row.getLastCellNum()];
 			for (int j = 0; j < row.getLastCellNum(); j++) {
 				// 获取单元格数据
-				fields[j] = row.getCell(j).getStringCellValue();
+				fields[j] = (String) getCellFormatValue(row.getCell(j));
 			}
 			records.add(fields);
 		}
@@ -57,6 +94,5 @@ public class ExcelDataProvider {
 		}
 		return results;
 	}
-	
 
 }

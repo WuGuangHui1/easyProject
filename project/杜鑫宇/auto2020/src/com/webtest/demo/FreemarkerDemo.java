@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.webtest.freemarker.GenerateReporter;
 
-@Listeners(GenerateReporter.class)
+//@Listeners(GenerateReporter.class)
 public class FreemarkerDemo{
 	@Test
     public void test1() {

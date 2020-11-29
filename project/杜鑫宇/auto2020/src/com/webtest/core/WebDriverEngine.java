@@ -303,5 +303,15 @@ public class WebDriverEngine {
 		}
 		driver.switchTo().window(windows.get(i));
 	}
+	
+	public WebElement getElementByXpath(String xpath) {
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement getElementByText(String content) {
+		return driver.findElement(By.linkText(content));
+	}
+	
+	
 
 }

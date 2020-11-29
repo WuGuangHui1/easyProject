@@ -1,13 +1,15 @@
 eclipse.preferences.version=1
+encoding//src/com/smoketest/testcases/controller/UserConfigurationTest.java=UTF-8
 encoding//src/com/smoketest/testcases/view=UTF-8
-encoding//src/com/smoketest/testcases/view/Admin_Login.java=UTF-8
+encoding//src/com/smoketest/testcases/view/FrontTest.java=UTF-8
 encoding//src/com/webtest/core=UTF-8
 encoding//src/com/webtest/core/ElementFinder.java=UTF-8
 encoding//src/com/webtest/core/WebDriverEngine.java=UTF-8
-encoding//src/com/webtest/dataprovider/NSDataProvider.java=UTF-8
+encoding//src/com/webtest/dataprovider/OrigionNSDataProvider.java=UTF-8
 encoding//src/com/webtest/dataprovider/TxtDataProvider.java=UTF-8
 encoding//src/com/webtest/demo/view/Admin_Login.java=UTF-8
 encoding//src/com/webtest/freemarker=UTF-8
 encoding//src/com/webtest/freemarker/GenerateReporter.java=UTF-8
 encoding//src/com/webtest/utils=UTF-8
 encoding//src/com/webtest/utils/DBUtil.java=UTF-8
+encoding//src/templates/overview.ftl=GBK

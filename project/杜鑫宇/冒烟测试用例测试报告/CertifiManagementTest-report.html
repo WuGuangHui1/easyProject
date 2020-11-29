@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<head>
+    <title>test</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="description" content="TestNG unit test results." />
+    <style type="text/css">
+        body
+        {
+            margin: 10px 20px;
+            font-size: 14px;
+            font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+        }
+        /*table*/
+        /*{*/
+            /*border-collapse: collapse;*/
+            /*text-align: center;*/
+            /*font-size: 14px;*/
+        /*}*/
+        /*table td, table th*/
+        /*{*/
+            /*border: 2px solid #cc6f4a;*/
+            /*color: #666;*/
+            /*height: 20px;*/
+            /*text-align: center;*/
+            /*padding: 3px 3px;*/
+        /*}*/
+        /*table thead th*/
+        /*{*/
+            /**/
+            /*width: 100px;*/
+        /*}*/
+        /*table tr:nth-child(odd)*/
+        /*{*/
+            /*background: #fff;*/
+        /*}*/
+        /*table tr:nth-child(even)*/
+        /*{*/
+            /*background: #c9dafa;*/
+        /*}*/
+        .successBtn {
+            width: 60px;
+            padding:3px;
+            background-color: #58ab48;
+            border-color: #58ab48;
+            color: #fff;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px; /* future proofing */
+            -khtml-border-radius: 10px; /* for old Konqueror browsers */
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            font-weight: 500;
+            /*font-size:125%*/
+        }
+        .failBtn{
+            width: 60px;
+            padding:3px;
+            background-color: #ab2e2d;
+            border-color: #ab2e2d;
+            color: #fff;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px; /* future proofing */
+            -khtml-border-radius: 10px; /* for old Konqueror browsers */
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            font-weight: 500;
+            /*font-size:125%*/
+        }
+    </style>
+
+    <style>
+        /* Border styles */
+        .tabNoBorder thead, .tabNoBorder tr {
+            border-top-width: 1px;
+            border-top-style: solid;
+            border-top-color: rgb(211, 202, 221);
+        }
+        .tabNoBorder {
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(211, 202, 221);
+        }
+
+        /* Padding and font style */
+        .tabNoBorder td, .tabNoBorder th {
+            padding: 5px 10px;
+            font-size: 14px;
+            font-family: Verdana;
+            color: rgb(95, 74, 121);
+        }
+
+        /* Alternating background colors */
+        .tabNoBorder tr:nth-child(even) {
+            background: rgb(223, 216, 232)
+        }
+        .tabNoBorder tr:nth-child(odd) {
+            background: #FFF
+        }
+    </style>
+
+
+</head>
+<body>
+<br/>
+<h2>Summary</h2>
+<table id="summary" class="tabNoBorder">
+    <tr class="columnHeadings">
+        <th>用例总数</th>
+        <th>未执行用例数</th>
+        <th>执行通过</th>
+        <th>执行失败</th>
+        <th>跳过用例数</th>
+        <th>执行时间(s)</th>
+        <th>用例通过率</th>
+            </tr>
+
+    <tr>
+        <td>7</td>
+        <td>0</td>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>163.162</td>
+        <td>100.00%</td>
+    </tr>
+</table>
+<br/><br/>
+<h2>Detail</h2>
+<table class="tabNoBorder">
+    <tr class="columnHeadings">
+        <th>编号</th>
+        <th>Class</th>
+        <th>MethodName</th>
+        <th>用例描述</th>
+        <th>执行结果</th>
+        <th>执行时间(s)</th>
+        <th>报错信息</th>
+    </tr>
+        <tr>
+            <td>1</td>
+            <td>com.smoketest.testcases.controller.CertifiManagementTest</td>
+            <td>test_correct_display</td>
+            <td>正确显示'认证类型'列表界面</td>
+            <td><div class="successBtn">Success</div></td>
+            <td>10.403</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>com.smoketest.testcases.controller.CertifiManagementTest</td>
+            <td>test_setAuthCondition</td>
+            <td>'设置'认证条件</td>
+            <td><div class="successBtn">Success</div></td>
+            <td>19.391</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>com.smoketest.testcases.controller.CertifiManagementTest</td>
+            <td>test_setAuthField</td>
+            <td>'设置'认证字段</td>
+            <td><div class="successBtn">Success</div></td>
+            <td>32.194</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>com.smoketest.testcases.controller.CertifiManagementTest</td>
+            <td>test_edit</td>
+            <td>操作中‘编辑’</td>
+            <td><div class="successBtn">Success</div></td>
+            <td>30.424</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>com.smoketest.testcases.controller.CertifiManagementTest</td>
+            <td>test_correct_displayUserInfo</td>
+            <td>正确显示'认证用户列表'界面</td>
+            <td><div class="successBtn">Success</div></td>
+            <td>10.293</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>com.smoketest.testcases.controller.CertifiManagementTest</td>
+            <td>test_approveSuccess</td>
+            <td>通过审核</td>
+            <td><div class="successBtn">Success</div></td>
+            <td>10.617</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>com.smoketest.testcases.controller.CertifiManagementTest</td>
+            <td>test_approveFailed</td>
+            <td>审核失败/禁用</td>
+            <td><div class="successBtn">Success</div></td>
+            <td>6.244</td>
+            <td></td>
+        </tr>
+
+
+</table>
+
+
+
+<br/><br/>
+
+
+
+</body>
+</html>

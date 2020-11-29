@@ -3,11 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.webtest.dataprovider.NSDataProvider">
+      <class name="com.smoketest.testcases.controller.TitleManagementTest">
         <methods>
-          <include name="getData"/>
+          <include name="test_showTitleInfo"/>
+          <include name="test_deleteTitle"/>
+          <include name="openUrl"/>
+          <include name="doAfterMethod"/>
+          <include name="test_addTitle"/>
+          <include name="test_editTitle"/>
+          <include name="doBeforeClass"/>
+          <include name="test_ifFrontApply"/>
         </methods>
-      </class> <!-- com.webtest.dataprovider.NSDataProvider -->
+      </class> <!-- com.smoketest.testcases.controller.TitleManagementTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -64,13 +64,15 @@ public class GenerateReporter implements IReporter {
 			System.out.println(context.get("overView").toString());
 			// 杈撳嚭娴�
 			// Writer writer = new BufferedWriter(new FileWriter("report.html"));
-			OutputStream out = new FileOutputStream("D:\\demo\\report11.html");
+			//（1）下面是生成测试报告页面
+			OutputStream out = new FileOutputStream("D:\\demo\\11-28report.html");
 			Writer writer = new BufferedWriter(new OutputStreamWriter(out, "utf-8"));// 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟�
 			// 杞崲杈撳嚭
 			temp.process(context, writer);
 			writer.flush();
-
-			InputStream inputStream = new FileInputStream("D:\\demo\\report1.html");
+			
+			//（2）下面是将生成的测试报告网页文件直接以邮件的形式发送给邮箱
+			InputStream inputStream = new FileInputStream("D:\\demo\\11-28report.html");
 			Scanner scanner = new Scanner(inputStream, "UTF-8");
 			String text = scanner.useDelimiter("\\A").next();
 			System.out.println(text);
