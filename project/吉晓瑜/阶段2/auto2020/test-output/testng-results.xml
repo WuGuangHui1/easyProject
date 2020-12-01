@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="60" passed="59">
+  <reporter-output>
+  </reporter-output>
+  <suite name="s1" duration-ms="738282" started-at="2020-12-01T11:40:55 CST" finished-at="2020-12-01T11:53:13 CST">
+    <groups>
+    </groups>
+    <test name="t1" duration-ms="738282" started-at="2020-12-01T11:40:55 CST" finished-at="2020-12-01T11:53:13 CST">
+      <class name="com.webtest.demo.Topic_Test">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Topic_Test@6c49835d]" name="doBeforeClass" is-config="true" duration-ms="4029" started-at="2020-12-01T11:51:51 CST" finished-at="2020-12-01T11:51:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.Topic_Test@6c49835d]" name="testLogin" duration-ms="12943" started-at="2020-12-01T11:51:55 CST" data-provider="excel" finished-at="2020-12-01T11:52:08 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test_see_topic()[pri:1, instance:com.webtest.demo.Topic_Test@6c49835d]" name="test_see_topic" duration-ms="7616" started-at="2020-12-01T11:52:08 CST" finished-at="2020-12-01T11:52:16 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_see_topic -->
+        <test-method status="PASS" signature="test_show_topic()[pri:2, instance:com.webtest.demo.Topic_Test@6c49835d]" name="test_show_topic" duration-ms="8340" started-at="2020-12-01T11:52:16 CST" finished-at="2020-12-01T11:52:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_show_topic -->
+        <test-method status="PASS" signature="test_topic_dynamic()[pri:3, instance:com.webtest.demo.Topic_Test@6c49835d]" name="test_topic_dynamic" duration-ms="10829" started-at="2020-12-01T11:52:24 CST" finished-at="2020-12-01T11:52:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_topic_dynamic -->
+        <test-method status="PASS" signature="test_follow_topic()[pri:4, instance:com.webtest.demo.Topic_Test@6c49835d]" name="test_follow_topic" duration-ms="388" started-at="2020-12-01T11:52:35 CST" finished-at="2020-12-01T11:52:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_follow_topic -->
+        <test-method status="PASS" signature="test_host_topic()[pri:5, instance:com.webtest.demo.Topic_Test@6c49835d]" name="test_host_topic" duration-ms="351" started-at="2020-12-01T11:52:35 CST" finished-at="2020-12-01T11:52:36 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_host_topic -->
+        <test-method status="PASS" signature="test_host_manager_topic()[pri:6, instance:com.webtest.demo.Topic_Test@6c49835d]" name="test_host_manager_topic" duration-ms="11162" started-at="2020-12-01T11:52:36 CST" finished-at="2020-12-01T11:52:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_host_manager_topic -->
+        <test-method status="FAIL" signature="test_recommend_topic()[pri:7, instance:com.webtest.demo.Topic_Test@6c49835d]" name="test_recommend_topic" duration-ms="7899" started-at="2020-12-01T11:52:47 CST" finished-at="2020-12-01T11:52:55 CST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <input id="top" name="is_top" type="checkbox"> is not clickable at point (975,6) because another element <ul class="first-ul"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-981PDTB', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 80.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200831163820, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 13688, moz:profile: C:\Users\JJIXI\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7b0bfd61-0a60-41c9-b239-02a243073965]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <input id="top" name="is_top" type="checkbox"> is not clickable at point (975,6) because another element <ul class="first-ul"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-981PDTB', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 80.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200831163820, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 13688, moz:profile: C:\Users\JJIXI\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7b0bfd61-0a60-41c9-b239-02a243073965
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:187)
+at com.webtest.demo.Topic_Test.test_recommend_topic(Topic_Test.java:76)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_recommend_topic -->
+        <test-method status="PASS" signature="test_manage_host_topic()[pri:8, instance:com.webtest.demo.Topic_Test@6c49835d]" name="test_manage_host_topic" duration-ms="17152" started-at="2020-12-01T11:52:55 CST" finished-at="2020-12-01T11:53:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_manage_host_topic -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.Topic_Test@6c49835d]" name="doAfterMethod" is-config="true" duration-ms="902" started-at="2020-12-01T11:53:12 CST" finished-at="2020-12-01T11:53:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.Topic_Test -->
+      <class name="com.webtest.demo.Browse_Test">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Browse_Test@7c29daf3]" name="doBeforeClass" is-config="true" duration-ms="3993" started-at="2020-12-01T11:43:41 CST" finished-at="2020-12-01T11:43:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.Browse_Test@7c29daf3]" name="testLogin" duration-ms="15545" started-at="2020-12-01T11:43:45 CST" data-provider="excel" finished-at="2020-12-01T11:44:01 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test_show_all()[pri:1, instance:com.webtest.demo.Browse_Test@7c29daf3]" name="test_show_all" duration-ms="10554" started-at="2020-12-01T11:44:01 CST" finished-at="2020-12-01T11:44:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_show_all -->
+        <test-method status="PASS" signature="test_show_photo()[pri:2, instance:com.webtest.demo.Browse_Test@7c29daf3]" name="test_show_photo" duration-ms="10458" started-at="2020-12-01T11:44:11 CST" finished-at="2020-12-01T11:44:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_show_photo -->
+        <test-method status="PASS" signature="test_show_time()[pri:3, instance:com.webtest.demo.Browse_Test@7c29daf3]" name="test_show_time" duration-ms="3145" started-at="2020-12-01T11:44:22 CST" finished-at="2020-12-01T11:44:25 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_show_time -->
+        <test-method status="PASS" signature="test_show_bigphoto()[pri:4, instance:com.webtest.demo.Browse_Test@7c29daf3]" name="test_show_bigphoto" duration-ms="6242" started-at="2020-12-01T11:44:25 CST" finished-at="2020-12-01T11:44:31 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_show_bigphoto -->
+        <test-method status="PASS" signature="test_next_bigphoto()[pri:5, instance:com.webtest.demo.Browse_Test@7c29daf3]" name="test_next_bigphoto" duration-ms="6610" started-at="2020-12-01T11:44:31 CST" finished-at="2020-12-01T11:44:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_next_bigphoto -->
+        <test-method status="PASS" signature="test_turn_right()[pri:6, instance:com.webtest.demo.Browse_Test@7c29daf3]" name="test_turn_right" duration-ms="3242" started-at="2020-12-01T11:44:38 CST" finished-at="2020-12-01T11:44:41 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_turn_right -->
+        <test-method status="PASS" signature="test_turn_left()[pri:7, instance:com.webtest.demo.Browse_Test@7c29daf3]" name="test_turn_left" duration-ms="3242" started-at="2020-12-01T11:44:41 CST" finished-at="2020-12-01T11:44:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_turn_left -->
+        <test-method status="PASS" signature="test_all_bigphoto()[pri:8, instance:com.webtest.demo.Browse_Test@7c29daf3]" name="test_all_bigphoto" duration-ms="6796" started-at="2020-12-01T11:44:44 CST" finished-at="2020-12-01T11:44:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_all_bigphoto -->
+        <test-method status="PASS" signature="test_esc_bigphoto()[pri:9, instance:com.webtest.demo.Browse_Test@7c29daf3]" name="test_esc_bigphoto" duration-ms="3243" started-at="2020-12-01T11:44:51 CST" finished-at="2020-12-01T11:44:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_esc_bigphoto -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.Browse_Test@7c29daf3]" name="doAfterMethod" is-config="true" duration-ms="835" started-at="2020-12-01T11:44:54 CST" finished-at="2020-12-01T11:44:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.Browse_Test -->
+      <class name="com.webtest.demo.Navigator_Test">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="doBeforeClass" is-config="true" duration-ms="3695" started-at="2020-12-01T11:48:30 CST" finished-at="2020-12-01T11:48:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="testLogin" duration-ms="12041" started-at="2020-12-01T11:48:34 CST" data-provider="excel" finished-at="2020-12-01T11:48:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test_signIn_date()[pri:1, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_signIn_date" duration-ms="6876" started-at="2020-12-01T11:48:46 CST" finished-at="2020-12-01T11:48:53 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_signIn_date -->
+        <test-method status="PASS" signature="test_signIn()[pri:2, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_signIn" duration-ms="7418" started-at="2020-12-01T11:48:53 CST" finished-at="2020-12-01T11:49:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_signIn -->
+        <test-method status="PASS" signature="test_rank()[pri:3, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_rank" duration-ms="6936" started-at="2020-12-01T11:49:00 CST" finished-at="2020-12-01T11:49:07 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_rank -->
+        <test-method status="PASS" signature="test_attention()[pri:4, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_attention" duration-ms="6974" started-at="2020-12-01T11:49:07 CST" finished-at="2020-12-01T11:49:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_attention -->
+        <test-method status="PASS" signature="test_hot_news()[pri:5, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_hot_news" duration-ms="3520" started-at="2020-12-01T11:49:14 CST" finished-at="2020-12-01T11:49:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_hot_news -->
+        <test-method status="PASS" signature="test_like_news()[pri:6, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_like_news" duration-ms="3538" started-at="2020-12-01T11:49:18 CST" finished-at="2020-12-01T11:49:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_like_news -->
+        <test-method status="PASS" signature="test_home_page()[pri:7, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_home_page" duration-ms="11915" started-at="2020-12-01T11:49:21 CST" finished-at="2020-12-01T11:49:33 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_home_page -->
+        <test-method status="PASS" signature="test_small_page()[pri:8, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_small_page" duration-ms="6634" started-at="2020-12-01T11:49:33 CST" finished-at="2020-12-01T11:49:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_small_page -->
+        <test-method status="PASS" signature="test_find_identity()[pri:9, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_find_identity" duration-ms="10063" started-at="2020-12-01T11:49:40 CST" finished-at="2020-12-01T11:49:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_find_identity -->
+        <test-method status="PASS" signature="test_find_area()[pri:10, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_find_area" duration-ms="20188" started-at="2020-12-01T11:49:50 CST" finished-at="2020-12-01T11:50:10 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_find_area -->
+        <test-method status="PASS" signature="test_attention_find1()[pri:11, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_attention_find1" duration-ms="12940" started-at="2020-12-01T11:50:10 CST" finished-at="2020-12-01T11:50:23 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_attention_find1 -->
+        <test-method status="PASS" signature="test_attention_find2()[pri:12, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_attention_find2" duration-ms="14735" started-at="2020-12-01T11:50:23 CST" finished-at="2020-12-01T11:50:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_attention_find2 -->
+        <test-method status="PASS" signature="test_cancel_attention()[pri:13, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_cancel_attention" duration-ms="12569" started-at="2020-12-01T11:50:38 CST" finished-at="2020-12-01T11:50:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_cancel_attention -->
+        <test-method status="PASS" signature="test_chat()[pri:14, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_chat" duration-ms="29956" started-at="2020-12-01T11:50:50 CST" finished-at="2020-12-01T11:51:20 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_chat -->
+        <test-method status="PASS" signature="test_invite()[pri:15, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="test_invite" duration-ms="30264" started-at="2020-12-01T11:51:20 CST" finished-at="2020-12-01T11:51:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_invite -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.Navigator_Test@5a8806ef]" name="doAfterMethod" is-config="true" duration-ms="804" started-at="2020-12-01T11:51:51 CST" finished-at="2020-12-01T11:51:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.Navigator_Test -->
+      <class name="com.webtest.demo.Dynamic_test">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Dynamic_test@4bbfb90a]" name="doBeforeClass" is-config="true" duration-ms="5138" started-at="2020-12-01T11:40:55 CST" finished-at="2020-12-01T11:41:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.Dynamic_test@4bbfb90a]" name="testLogin" duration-ms="16070" started-at="2020-12-01T11:41:00 CST" data-provider="excel" finished-at="2020-12-01T11:41:16 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test_writing_dynamic()[pri:1, instance:com.webtest.demo.Dynamic_test@4bbfb90a]" name="test_writing_dynamic" duration-ms="23452" started-at="2020-12-01T11:41:16 CST" finished-at="2020-12-01T11:41:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_writing_dynamic -->
+        <test-method status="PASS" signature="test_photo_dynamic()[pri:2, instance:com.webtest.demo.Dynamic_test@4bbfb90a]" name="test_photo_dynamic" duration-ms="19461" started-at="2020-12-01T11:41:40 CST" finished-at="2020-12-01T11:41:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_photo_dynamic -->
+        <test-method status="PASS" signature="test_photo2_dynamic()[pri:3, instance:com.webtest.demo.Dynamic_test@4bbfb90a]" name="test_photo2_dynamic" duration-ms="22933" started-at="2020-12-01T11:41:59 CST" finished-at="2020-12-01T11:42:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_photo2_dynamic -->
+        <test-method status="PASS" signature="test_photo3_dynamic()[pri:4, instance:com.webtest.demo.Dynamic_test@4bbfb90a]" name="test_photo3_dynamic" duration-ms="26157" started-at="2020-12-01T11:42:22 CST" finished-at="2020-12-01T11:42:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_photo3_dynamic -->
+        <test-method status="PASS" signature="test_topic_dynamic()[pri:5, instance:com.webtest.demo.Dynamic_test@4bbfb90a]" name="test_topic_dynamic" duration-ms="16392" started-at="2020-12-01T11:42:48 CST" finished-at="2020-12-01T11:43:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_topic_dynamic -->
+        <test-method status="PASS" signature="test_expression_dynamic()[pri:6, instance:com.webtest.demo.Dynamic_test@4bbfb90a]" name="test_expression_dynamic" duration-ms="19732" started-at="2020-12-01T11:43:04 CST" finished-at="2020-12-01T11:43:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_expression_dynamic -->
+        <test-method status="PASS" signature="test_enter_dynamic()[pri:7, instance:com.webtest.demo.Dynamic_test@4bbfb90a]" name="test_enter_dynamic" duration-ms="15959" started-at="2020-12-01T11:43:24 CST" finished-at="2020-12-01T11:43:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_enter_dynamic -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.Dynamic_test@4bbfb90a]" name="doAfterMethod" is-config="true" duration-ms="779" started-at="2020-12-01T11:43:40 CST" finished-at="2020-12-01T11:43:41 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.Dynamic_test -->
+      <class name="com.webtest.demo.Management_Dynamic_Test">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="doBeforeClass" is-config="true" duration-ms="4072" started-at="2020-12-01T11:44:55 CST" finished-at="2020-12-01T11:44:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="testLogin" duration-ms="12919" started-at="2020-12-01T11:44:59 CST" data-provider="excel" finished-at="2020-12-01T11:45:12 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test_top_dynamic()[pri:1, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_top_dynamic" duration-ms="22933" started-at="2020-12-01T11:45:12 CST" finished-at="2020-12-01T11:45:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_top_dynamic -->
+        <test-method status="PASS" signature="test_top_conceal_dynamic()[pri:2, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_top_conceal_dynamic" duration-ms="29320" started-at="2020-12-01T11:45:35 CST" finished-at="2020-12-01T11:46:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_top_conceal_dynamic -->
+        <test-method status="PASS" signature="test_top_concel1_dynamic()[pri:3, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_top_concel1_dynamic" duration-ms="16513" started-at="2020-12-01T11:46:04 CST" finished-at="2020-12-01T11:46:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_top_concel1_dynamic -->
+        <test-method status="PASS" signature="test_top2_dynamic()[pri:4, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_top2_dynamic" duration-ms="22858" started-at="2020-12-01T11:46:21 CST" finished-at="2020-12-01T11:46:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_top2_dynamic -->
+        <test-method status="PASS" signature="test_top_concel2_dynamic()[pri:5, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_top_concel2_dynamic" duration-ms="10501" started-at="2020-12-01T11:46:44 CST" finished-at="2020-12-01T11:46:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_top_concel2_dynamic -->
+        <test-method status="PASS" signature="test_like_dynamic()[pri:6, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_like_dynamic" duration-ms="6719" started-at="2020-12-01T11:46:54 CST" finished-at="2020-12-01T11:47:01 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_like_dynamic -->
+        <test-method status="PASS" signature="test_unlike_dynamic()[pri:7, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_unlike_dynamic" duration-ms="6760" started-at="2020-12-01T11:47:01 CST" depends-on-methods="com.webtest.demo.Management_Dynamic_Test.test_like_dynamic" finished-at="2020-12-01T11:47:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_unlike_dynamic -->
+        <test-method status="PASS" signature="test_discuss()[pri:8, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_discuss" duration-ms="12009" started-at="2020-12-01T11:47:08 CST" finished-at="2020-12-01T11:47:20 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_discuss -->
+        <test-method status="PASS" signature="test_like_com()[pri:9, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_like_com" duration-ms="3705" started-at="2020-12-01T11:47:20 CST" finished-at="2020-12-01T11:47:23 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_like_com -->
+        <test-method status="PASS" signature="test_unlike_com()[pri:10, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_unlike_com" duration-ms="3655" started-at="2020-12-01T11:47:23 CST" depends-on-methods="com.webtest.demo.Management_Dynamic_Test.test_like_com" finished-at="2020-12-01T11:47:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_unlike_com -->
+        <test-method status="PASS" signature="test_discuss_reply()[pri:11, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_discuss_reply" duration-ms="5706" started-at="2020-12-01T11:47:27 CST" finished-at="2020-12-01T11:47:33 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_discuss_reply -->
+        <test-method status="PASS" signature="test_discuss_hide()[pri:12, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_discuss_hide" duration-ms="6224" started-at="2020-12-01T11:47:33 CST" finished-at="2020-12-01T11:47:39 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_discuss_hide -->
+        <test-method status="PASS" signature="test_inform_dynamic()[pri:13, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_inform_dynamic" duration-ms="13617" started-at="2020-12-01T11:47:39 CST" finished-at="2020-12-01T11:47:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_inform_dynamic -->
+        <test-method status="PASS" signature="test_inform_com_dynamic()[pri:14, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_inform_com_dynamic" duration-ms="13609" started-at="2020-12-01T11:47:52 CST" finished-at="2020-12-01T11:48:06 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_inform_com_dynamic -->
+        <test-method status="PASS" signature="test_del_com_dynamic()[pri:15, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_del_com_dynamic" duration-ms="7050" started-at="2020-12-01T11:48:06 CST" finished-at="2020-12-01T11:48:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_del_com_dynamic -->
+        <test-method status="PASS" signature="test_del_dynamic()[pri:16, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="test_del_dynamic" duration-ms="16184" started-at="2020-12-01T11:48:13 CST" finished-at="2020-12-01T11:48:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_del_dynamic -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.Management_Dynamic_Test@9660f4e]" name="doAfterMethod" is-config="true" duration-ms="938" started-at="2020-12-01T11:48:29 CST" finished-at="2020-12-01T11:48:30 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.Management_Dynamic_Test -->
+    </test> <!-- t1 -->
+  </suite> <!-- s1 -->
+</testng-results>

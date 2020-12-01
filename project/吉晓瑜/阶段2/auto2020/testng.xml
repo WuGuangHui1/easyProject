@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="s1" verbose="1" parallel="none">
+	<test name="t1" preserve-order="true">
+		<classes>
+			<class name="com.webtest.demo.Dynamic_test" />
+			<class name="com.webtest.demo.Browse_Test" />
+			<class name="com.webtest.demo.Management_Dynamic_Test" />
+			<class name="com.webtest.demo.Navigator_Test" />
+			<class name="com.webtest.demo.Topic_Test" />
+		</classes>
+	</test>
+
+</suite>

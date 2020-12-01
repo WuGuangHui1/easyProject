@@ -1,0 +1,15 @@
+1，实现UI测试用例60条
+包括
+com.webtest.demo:
+
+<class name="com.webtest.demo.Dynamic_test" />：关于发动态的测试用例
+<class name="com.webtest.demo.Browse_Test" />：关于浏览动态
+<class name="com.webtest.demo.Management_Dynamic_Test" />：关于管理动态
+<class name="com.webtest.demo.Navigator_Test" />：关于导航栏
+<class name="com.webtest.demo.Topic_Test" />：关于话题
+
+
+2，实现一起运行发送测试报告
+
+3，遇到问题：
+每次运行，测试不通过的用例不同（在少数）。
