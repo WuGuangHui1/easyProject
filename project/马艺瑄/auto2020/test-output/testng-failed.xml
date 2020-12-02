@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [s1]">
+  <listeners>
+    <listener class-name="com.webtest.freemarker.GenerateReporter"/>
+  </listeners>
+  <test thread-count="5" name="t2(failed)">
     <classes>
-      <class name="com.webtest.demo.Admin_Login">
+      <class name="com.webtest.demo.behaviorlog">
         <methods>
           <include name="doAfterMethod"/>
-          <include name="testLogin"/>
+          <include name="test63"/>
           <include name="doBeforeClass"/>
         </methods>
-      </class> <!-- com.webtest.demo.Admin_Login -->
+      </class> <!-- com.webtest.demo.behaviorlog -->
+      <class name="com.webtest.demo.messageSearch">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="test66"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.demo.messageSearch -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- t2(failed) -->
+</suite> <!-- Failed suite [s1] -->

@@ -13,7 +13,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class TxtDataProvider {
-	
+
+
 	
 	public Object[][] getTxtUser(String fileName) throws IOException {
 		
@@ -27,6 +28,7 @@ public class TxtDataProvider {
 		
 		String readData;
 		while((readData=reader.readLine())!=null) {
+			
 			dataList.add(readData);
 		}
 		

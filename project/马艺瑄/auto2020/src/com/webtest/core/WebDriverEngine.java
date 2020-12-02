@@ -99,7 +99,7 @@ public class WebDriverEngine {
 		return driver.getTitle();
 	}
 
-	private void pause(int time) {
+	public void pause(int time) {
 		if (time <= 0) {
 			return;
 		}
@@ -261,6 +261,9 @@ public class WebDriverEngine {
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript(js);
 	}
+	public void clickandholdto(String locator,int i,int j) {
+		action.clickAndHold(finder.findElement(locator)).moveByOffset(i, j).moveToElement(finder.findElement(locator)).release().perform();;
+	}
 
 
 	public void mouseToElement(String locator) throws InterruptedException {
@@ -278,11 +281,11 @@ public class WebDriverEngine {
 	    }
 	    driver.switchTo().window(windows.get(i));
 	}
-	//ÓÒ¼ü
+	//ï¿½Ò¼ï¿½
 	public void rightClickMouse(String locator) throws InterruptedException {
 		action.contextClick(finder.findElement(locator)).perform();
 		}
-	//Tab¼ü
+	//Tabï¿½ï¿½
 	public void tapClick(){
 	
 		action.sendKeys(Keys.TAB).perform();;

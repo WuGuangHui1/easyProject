@@ -1,11 +1,674 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="63" passed="61">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17" started-at="2020-11-15T17:59:08 CST" finished-at="2020-11-15T17:59:08 CST">
+  <suite name="s1" duration-ms="837150" started-at="2020-12-02T10:35:02 CST" finished-at="2020-12-02T10:48:59 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17" started-at="2020-11-15T17:59:08 CST" finished-at="2020-11-15T17:59:08 CST">
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    <test name="t2" duration-ms="837150" started-at="2020-12-02T10:35:02 CST" finished-at="2020-12-02T10:48:59 CST">
+      <class name="com.webtest.demo.pointLog">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.pointLog@2a17b7b6]" name="doBeforeClass" is-config="true" duration-ms="3562" started-at="2020-12-02T10:43:34 CST" finished-at="2020-12-02T10:43:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.pointLog@2a17b7b6]" name="testLogin" duration-ms="12059" started-at="2020-12-02T10:43:37 CST" data-provider="excel" finished-at="2020-12-02T10:43:49 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test43()[pri:29, instance:com.webtest.demo.pointLog@2a17b7b6]" name="test43" duration-ms="10569" started-at="2020-12-02T10:43:49 CST" finished-at="2020-12-02T10:44:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test43 -->
+        <test-method status="PASS" signature="test42()[pri:30, instance:com.webtest.demo.pointLog@2a17b7b6]" name="test42" duration-ms="7295" started-at="2020-12-02T10:44:00 CST" finished-at="2020-12-02T10:44:07 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test42 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.pointLog@2a17b7b6]" name="doAfterMethod" is-config="true" duration-ms="669" started-at="2020-12-02T10:44:07 CST" finished-at="2020-12-02T10:44:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.pointLog -->
+      <class name="com.webtest.demo.messageSearch">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.messageSearch@5d76b067]" name="doBeforeClass" is-config="true" duration-ms="3570" started-at="2020-12-02T10:43:14 CST" finished-at="2020-12-02T10:43:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="FAIL" signature="test66()[pri:0, instance:com.webtest.demo.messageSearch@5d76b067]" name="test66" duration-ms="3008" started-at="2020-12-02T10:43:18 CST" finished-at="2020-12-02T10:43:21 CST">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Must provide a location for a move action.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Must provide a location for a move action.
+at org.openqa.selenium.interactions.MoveMouseAction.<init>(MoveMouseAction.java:37)
+at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:386)
+at com.webtest.core.WebDriverEngine.mouseToElement(WebDriverEngine.java:270)
+at com.webtest.demo.messageSearch.test66(messageSearch.java:10)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test66 -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.messageSearch@5d76b067]" name="testLogin" duration-ms="12012" started-at="2020-12-02T10:43:21 CST" data-provider="excel" finished-at="2020-12-02T10:43:33 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.messageSearch@5d76b067]" name="doAfterMethod" is-config="true" duration-ms="633" started-at="2020-12-02T10:43:33 CST" finished-at="2020-12-02T10:43:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.messageSearch -->
+      <class name="com.webtest.demo.limit">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.limit@67205a84]" name="doBeforeClass" is-config="true" duration-ms="3556" started-at="2020-12-02T10:40:34 CST" finished-at="2020-12-02T10:40:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.limit@67205a84]" name="testLogin" duration-ms="12053" started-at="2020-12-02T10:40:37 CST" data-provider="excel" finished-at="2020-12-02T10:40:49 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test67()[pri:1, instance:com.webtest.demo.limit@67205a84]" name="test67" duration-ms="31157" started-at="2020-12-02T10:40:49 CST" finished-at="2020-12-02T10:41:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test67 -->
+        <test-method status="PASS" signature="test69()[pri:2, instance:com.webtest.demo.limit@67205a84]" name="test69" duration-ms="10523" started-at="2020-12-02T10:41:21 CST" finished-at="2020-12-02T10:41:31 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test69 -->
+        <test-method status="PASS" signature="test68()[pri:3, instance:com.webtest.demo.limit@67205a84]" name="test68" duration-ms="10512" started-at="2020-12-02T10:41:31 CST" finished-at="2020-12-02T10:41:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test68 -->
+        <test-method status="PASS" signature="test70()[pri:4, instance:com.webtest.demo.limit@67205a84]" name="test70" duration-ms="10513" started-at="2020-12-02T10:41:42 CST" finished-at="2020-12-02T10:41:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test70 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.limit@67205a84]" name="doAfterMethod" is-config="true" duration-ms="707" started-at="2020-12-02T10:41:52 CST" finished-at="2020-12-02T10:41:53 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.limit -->
+      <class name="com.webtest.demo.behaviorlog">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.behaviorlog@6c49835d]" name="doBeforeClass" is-config="true" duration-ms="3552" started-at="2020-12-02T10:38:50 CST" finished-at="2020-12-02T10:38:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.behaviorlog@6c49835d]" name="testLogin" duration-ms="11979" started-at="2020-12-02T10:38:54 CST" data-provider="excel" finished-at="2020-12-02T10:39:06 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test60()[pri:31, instance:com.webtest.demo.behaviorlog@6c49835d]" name="test60" duration-ms="13811" started-at="2020-12-02T10:39:06 CST" finished-at="2020-12-02T10:39:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test60 -->
+        <test-method status="FAIL" signature="test63()[pri:32, instance:com.webtest.demo.behaviorlog@6c49835d]" name="test63" duration-ms="6556" started-at="2020-12-02T10:39:19 CST" finished-at="2020-12-02T10:39:26 CST">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-K59KI9T', ip: '10.7.86.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 24892, moz:profile: C:\Users\myx\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e763192c-8e4e-495a-b466-aa3fcdabc52b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-K59KI9T', ip: '10.7.86.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 24892, moz:profile: C:\Users\myx\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e763192c-8e4e-495a-b466-aa3fcdabc52b
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
+at com.webtest.core.WebDriverEngine.getAlert(WebDriverEngine.java:222)
+at com.webtest.core.WebDriverEngine.alertAccept(WebDriverEngine.java:232)
+at com.webtest.demo.behaviorlog.test63(behaviorlog.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test63 -->
+        <test-method status="PASS" signature="test62()[pri:33, instance:com.webtest.demo.behaviorlog@6c49835d]" name="test62" duration-ms="13692" started-at="2020-12-02T10:39:26 CST" finished-at="2020-12-02T10:39:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test62 -->
+        <test-method status="PASS" signature="test65()[pri:34, instance:com.webtest.demo.behaviorlog@6c49835d]" name="test65" duration-ms="4299" started-at="2020-12-02T10:39:40 CST" finished-at="2020-12-02T10:39:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test65 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.behaviorlog@6c49835d]" name="doAfterMethod" is-config="true" duration-ms="644" started-at="2020-12-02T10:39:44 CST" finished-at="2020-12-02T10:39:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.behaviorlog -->
+      <class name="com.webtest.demo.pointType">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.pointType@1e6d1014]" name="doBeforeClass" is-config="true" duration-ms="3554" started-at="2020-12-02T10:45:27 CST" finished-at="2020-12-02T10:45:30 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.pointType@1e6d1014]" name="testLogin" duration-ms="12030" started-at="2020-12-02T10:45:30 CST" data-provider="excel" finished-at="2020-12-02T10:45:42 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test44()[pri:21, instance:com.webtest.demo.pointType@1e6d1014]" name="test44" duration-ms="14129" started-at="2020-12-02T10:45:42 CST" finished-at="2020-12-02T10:45:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test44 -->
+        <test-method status="PASS" signature="test46()[pri:23, instance:com.webtest.demo.pointType@1e6d1014]" name="test46" duration-ms="10516" started-at="2020-12-02T10:45:56 CST" finished-at="2020-12-02T10:46:07 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test46 -->
+        <test-method status="PASS" signature="test47()[pri:24, instance:com.webtest.demo.pointType@1e6d1014]" name="test47" duration-ms="10533" started-at="2020-12-02T10:46:07 CST" finished-at="2020-12-02T10:46:17 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test47 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.pointType@1e6d1014]" name="doAfterMethod" is-config="true" duration-ms="675" started-at="2020-12-02T10:46:17 CST" finished-at="2020-12-02T10:46:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.pointType -->
+      <class name="com.webtest.demo.SEOrelus">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.SEOrelus@1f554b06]" name="doBeforeClass" is-config="true" duration-ms="3551" started-at="2020-12-02T10:47:59 CST" finished-at="2020-12-02T10:48:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.SEOrelus@1f554b06]" name="testLogin" duration-ms="12196" started-at="2020-12-02T10:48:02 CST" data-provider="excel" finished-at="2020-12-02T10:48:15 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test89()[pri:47, instance:com.webtest.demo.SEOrelus@1f554b06]" name="test89" duration-ms="13993" started-at="2020-12-02T10:48:15 CST" finished-at="2020-12-02T10:48:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test89 -->
+        <test-method status="PASS" signature="test90()[pri:48, instance:com.webtest.demo.SEOrelus@1f554b06]" name="test90" duration-ms="11545" started-at="2020-12-02T10:48:29 CST" finished-at="2020-12-02T10:48:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test90 -->
+        <test-method status="PASS" signature="test92()[pri:49, instance:com.webtest.demo.SEOrelus@1f554b06]" name="test92" duration-ms="10531" started-at="2020-12-02T10:48:40 CST" finished-at="2020-12-02T10:48:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test92 -->
+        <test-method status="PASS" signature="test91()[pri:50, instance:com.webtest.demo.SEOrelus@1f554b06]" name="test91" duration-ms="7530" started-at="2020-12-02T10:48:51 CST" finished-at="2020-12-02T10:48:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test91 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.SEOrelus@1f554b06]" name="doAfterMethod" is-config="true" duration-ms="675" started-at="2020-12-02T10:48:58 CST" finished-at="2020-12-02T10:48:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.SEOrelus -->
+      <class name="com.webtest.demo.pointRule">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.pointRule@4f063c0a]" name="doBeforeClass" is-config="true" duration-ms="3585" started-at="2020-12-02T10:44:08 CST" finished-at="2020-12-02T10:44:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.pointRule@4f063c0a]" name="testLogin" duration-ms="12018" started-at="2020-12-02T10:44:11 CST" data-provider="excel" finished-at="2020-12-02T10:44:23 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test49()[pri:1, instance:com.webtest.demo.pointRule@4f063c0a]" name="test49" duration-ms="21947" started-at="2020-12-02T10:44:23 CST" finished-at="2020-12-02T10:44:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test49 -->
+        <test-method status="PASS" signature="test51()[pri:2, instance:com.webtest.demo.pointRule@4f063c0a]" name="test51" duration-ms="13568" started-at="2020-12-02T10:44:45 CST" finished-at="2020-12-02T10:44:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test51 -->
+        <test-method status="PASS" signature="test50()[pri:3, instance:com.webtest.demo.pointRule@4f063c0a]" name="test50" duration-ms="13561" started-at="2020-12-02T10:44:59 CST" finished-at="2020-12-02T10:45:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test50 -->
+        <test-method status="PASS" signature="test52()[pri:4, instance:com.webtest.demo.pointRule@4f063c0a]" name="test52" duration-ms="13573" started-at="2020-12-02T10:45:12 CST" finished-at="2020-12-02T10:45:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test52 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.pointRule@4f063c0a]" name="doAfterMethod" is-config="true" duration-ms="670" started-at="2020-12-02T10:45:26 CST" finished-at="2020-12-02T10:45:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.pointRule -->
+      <class name="com.webtest.demo.adPosition">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.adPosition@5a8806ef]" name="doBeforeClass" is-config="true" duration-ms="3569" started-at="2020-12-02T10:37:10 CST" finished-at="2020-12-02T10:37:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.adPosition@5a8806ef]" name="testLogin" duration-ms="12190" started-at="2020-12-02T10:37:14 CST" data-provider="excel" finished-at="2020-12-02T10:37:26 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test16()[pri:1, instance:com.webtest.demo.adPosition@5a8806ef]" name="test16" duration-ms="30702" started-at="2020-12-02T10:37:26 CST" finished-at="2020-12-02T10:37:57 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test16 -->
+        <test-method status="PASS" signature="test32()[pri:2, instance:com.webtest.demo.adPosition@5a8806ef]" name="test32" duration-ms="27195" started-at="2020-12-02T10:37:57 CST" finished-at="2020-12-02T10:38:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test32 -->
+        <test-method status="PASS" signature="test33()[pri:3, instance:com.webtest.demo.adPosition@5a8806ef]" name="test33" duration-ms="7418" started-at="2020-12-02T10:38:24 CST" finished-at="2020-12-02T10:38:31 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test33 -->
+        <test-method status="PASS" signature="test34()[pri:4, instance:com.webtest.demo.adPosition@5a8806ef]" name="test34" duration-ms="7395" started-at="2020-12-02T10:38:31 CST" finished-at="2020-12-02T10:38:39 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test34 -->
+        <test-method status="PASS" signature="test35()[pri:5, instance:com.webtest.demo.adPosition@5a8806ef]" name="test35" duration-ms="10594" started-at="2020-12-02T10:38:39 CST" finished-at="2020-12-02T10:38:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test35 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.adPosition@5a8806ef]" name="doAfterMethod" is-config="true" duration-ms="684" started-at="2020-12-02T10:38:49 CST" finished-at="2020-12-02T10:38:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.adPosition -->
+      <class name="com.webtest.demo.Public">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Public@7c29daf3]" name="doBeforeClass" is-config="true" duration-ms="4319" started-at="2020-12-02T10:35:02 CST" finished-at="2020-12-02T10:35:06 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.Public@7c29daf3]" name="testLogin" duration-ms="12005" started-at="2020-12-02T10:35:06 CST" data-provider="excel" finished-at="2020-12-02T10:35:18 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test1()[pri:1, instance:com.webtest.demo.Public@7c29daf3]" name="test1" duration-ms="14407" started-at="2020-12-02T10:35:18 CST" finished-at="2020-12-02T10:35:33 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:2, instance:com.webtest.demo.Public@7c29daf3]" name="test2" duration-ms="10562" started-at="2020-12-02T10:35:33 CST" finished-at="2020-12-02T10:35:43 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3()[pri:3, instance:com.webtest.demo.Public@7c29daf3]" name="test3" duration-ms="10564" started-at="2020-12-02T10:35:43 CST" finished-at="2020-12-02T10:35:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test4()[pri:4, instance:com.webtest.demo.Public@7c29daf3]" name="test4" duration-ms="10546" started-at="2020-12-02T10:35:54 CST" finished-at="2020-12-02T10:36:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.Public@7c29daf3]" name="doAfterMethod" is-config="true" duration-ms="684" started-at="2020-12-02T10:36:05 CST" finished-at="2020-12-02T10:36:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.Public -->
+      <class name="com.webtest.demo.sensitiveword">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.sensitiveword@614ddd49]" name="doBeforeClass" is-config="true" duration-ms="3561" started-at="2020-12-02T10:46:56 CST" finished-at="2020-12-02T10:46:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.sensitiveword@614ddd49]" name="testLogin" duration-ms="12058" started-at="2020-12-02T10:46:59 CST" data-provider="excel" finished-at="2020-12-02T10:47:11 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test9()[pri:1, instance:com.webtest.demo.sensitiveword@614ddd49]" name="test9" duration-ms="11106" started-at="2020-12-02T10:47:11 CST" finished-at="2020-12-02T10:47:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+        <test-method status="PASS" signature="test10()[pri:2, instance:com.webtest.demo.sensitiveword@614ddd49]" name="test10" duration-ms="10545" started-at="2020-12-02T10:47:22 CST" finished-at="2020-12-02T10:47:33 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10 -->
+        <test-method status="PASS" signature="test11()[pri:3, instance:com.webtest.demo.sensitiveword@614ddd49]" name="test11" duration-ms="7314" started-at="2020-12-02T10:47:33 CST" finished-at="2020-12-02T10:47:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11 -->
+        <test-method status="PASS" signature="test12()[pri:4, instance:com.webtest.demo.sensitiveword@614ddd49]" name="test12" duration-ms="7315" started-at="2020-12-02T10:47:40 CST" finished-at="2020-12-02T10:47:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12 -->
+        <test-method status="PASS" signature="test13()[pri:5, instance:com.webtest.demo.sensitiveword@614ddd49]" name="test13" duration-ms="10612" started-at="2020-12-02T10:47:48 CST" finished-at="2020-12-02T10:47:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.sensitiveword@614ddd49]" name="doAfterMethod" is-config="true" duration-ms="675" started-at="2020-12-02T10:47:58 CST" finished-at="2020-12-02T10:47:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.sensitiveword -->
+      <class name="com.webtest.demo.sensitiveSetting">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.sensitiveSetting@76707e36]" name="doBeforeClass" is-config="true" duration-ms="3561" started-at="2020-12-02T10:46:18 CST" finished-at="2020-12-02T10:46:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.sensitiveSetting@76707e36]" name="testLogin" duration-ms="11990" started-at="2020-12-02T10:46:22 CST" data-provider="excel" finished-at="2020-12-02T10:46:34 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test14()[pri:1, instance:com.webtest.demo.sensitiveSetting@76707e36]" name="test14" duration-ms="10819" started-at="2020-12-02T10:46:34 CST" finished-at="2020-12-02T10:46:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14 -->
+        <test-method status="PASS" signature="test15()[pri:2, instance:com.webtest.demo.sensitiveSetting@76707e36]" name="test15" duration-ms="10525" started-at="2020-12-02T10:46:44 CST" finished-at="2020-12-02T10:46:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test15 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.sensitiveSetting@76707e36]" name="doAfterMethod" is-config="true" duration-ms="656" started-at="2020-12-02T10:46:55 CST" finished-at="2020-12-02T10:46:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.sensitiveSetting -->
+      <class name="com.webtest.demo.linkfriend">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.linkfriend@9660f4e]" name="doBeforeClass" is-config="true" duration-ms="3563" started-at="2020-12-02T10:36:05 CST" finished-at="2020-12-02T10:36:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.linkfriend@9660f4e]" name="testLogin" duration-ms="12032" started-at="2020-12-02T10:36:09 CST" data-provider="excel" finished-at="2020-12-02T10:36:21 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test5()[pri:1, instance:com.webtest.demo.linkfriend@9660f4e]" name="test5" duration-ms="19108" started-at="2020-12-02T10:36:21 CST" finished-at="2020-12-02T10:36:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="test7()[pri:2, instance:com.webtest.demo.linkfriend@9660f4e]" name="test7" duration-ms="10542" started-at="2020-12-02T10:36:40 CST" finished-at="2020-12-02T10:36:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method status="PASS" signature="test6()[pri:3, instance:com.webtest.demo.linkfriend@9660f4e]" name="test6" duration-ms="8541" started-at="2020-12-02T10:36:50 CST" finished-at="2020-12-02T10:36:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="test8()[pri:4, instance:com.webtest.demo.linkfriend@9660f4e]" name="test8" duration-ms="10561" started-at="2020-12-02T10:36:59 CST" finished-at="2020-12-02T10:37:10 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.linkfriend@9660f4e]" name="doAfterMethod" is-config="true" duration-ms="679" started-at="2020-12-02T10:37:10 CST" finished-at="2020-12-02T10:37:10 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.linkfriend -->
+      <class name="com.webtest.demo.invitemanage">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.invitemanage@5e853265]" name="doBeforeClass" is-config="true" duration-ms="3563" started-at="2020-12-02T10:39:45 CST" finished-at="2020-12-02T10:39:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.invitemanage@5e853265]" name="testLogin" duration-ms="11975" started-at="2020-12-02T10:39:48 CST" data-provider="excel" finished-at="2020-12-02T10:40:00 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test75()[pri:5, instance:com.webtest.demo.invitemanage@5e853265]" name="test75" duration-ms="14025" started-at="2020-12-02T10:40:00 CST" finished-at="2020-12-02T10:40:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test75 -->
+        <test-method status="PASS" signature="test76()[pri:6, instance:com.webtest.demo.invitemanage@5e853265]" name="test76" duration-ms="11541" started-at="2020-12-02T10:40:14 CST" finished-at="2020-12-02T10:40:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test76 -->
+        <test-method status="PASS" signature="test80()[pri:7, instance:com.webtest.demo.invitemanage@5e853265]" name="test80" duration-ms="7428" started-at="2020-12-02T10:40:26 CST" finished-at="2020-12-02T10:40:33 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test80 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.invitemanage@5e853265]" name="doAfterMethod" is-config="true" duration-ms="680" started-at="2020-12-02T10:40:33 CST" finished-at="2020-12-02T10:40:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.invitemanage -->
+      <class name="com.webtest.demo.memeimg">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.memeimg@7d0587f1]" name="doBeforeClass" is-config="true" duration-ms="3571" started-at="2020-12-02T10:41:53 CST" finished-at="2020-12-02T10:41:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.memeimg@7d0587f1]" name="testLogin" duration-ms="12048" started-at="2020-12-02T10:41:56 CST" data-provider="excel" finished-at="2020-12-02T10:42:08 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test71()[pri:1, instance:com.webtest.demo.memeimg@7d0587f1]" name="test71" duration-ms="12083" started-at="2020-12-02T10:42:08 CST" finished-at="2020-12-02T10:42:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test71 -->
+        <test-method status="PASS" signature="test72()[pri:2, instance:com.webtest.demo.memeimg@7d0587f1]" name="test72" duration-ms="11944" started-at="2020-12-02T10:42:21 CST" finished-at="2020-12-02T10:42:33 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test72 -->
+        <test-method status="PASS" signature="test73()[pri:3, instance:com.webtest.demo.memeimg@7d0587f1]" name="test73" duration-ms="30623" started-at="2020-12-02T10:42:33 CST" finished-at="2020-12-02T10:43:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test73 -->
+        <test-method status="PASS" signature="test74()[pri:4, instance:com.webtest.demo.memeimg@7d0587f1]" name="test74" duration-ms="10546" started-at="2020-12-02T10:43:03 CST" finished-at="2020-12-02T10:43:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test74 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.memeimg@7d0587f1]" name="doAfterMethod" is-config="true" duration-ms="647" started-at="2020-12-02T10:43:14 CST" finished-at="2020-12-02T10:43:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.memeimg -->
+    </test> <!-- t2 -->
+  </suite> <!-- s1 -->
 </testng-results>

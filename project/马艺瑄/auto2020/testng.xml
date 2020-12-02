@@ -1,13 +1,25 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
 
 <suite name="s1" verbose="1" parallel="none">
 <listeners>
-		<listener class-name="com.webtest.core.WebTestListener"></listener>
+		<listener class-name="com.webtest.freemarker.GenerateReporter"></listener>
 	</listeners>
 	<test name="t2" preserve-order="true">
 		<classes>
-			<class name="com.webtest.demo.XueliDemo"/>
-			
+			<class name="com.webtest.demo.Public"/>
+			<class name="com.webtest.demo.linkfriend"/>
+			<class name="com.webtest.demo.adPosition"/>
+			<class name="com.webtest.demo.behaviorlog"/>
+			<class name="com.webtest.demo.invitemanage"/>
+			<class name="com.webtest.demo.limit"/>
+			<class name="com.webtest.demo.memeimg"/>
+			<class name="com.webtest.demo.messageSearch"/>
+			<class name="com.webtest.demo.pointLog"/>
+			<class name="com.webtest.demo.pointRule"/>
+			<class name="com.webtest.demo.pointType"/>
+			<class name="com.webtest.demo.sensitiveSetting"/>
+			<class name="com.webtest.demo.sensitiveword"/>
+			<class name="com.webtest.demo.SEOrelus"/>
 			
 		</classes>
 	</test>

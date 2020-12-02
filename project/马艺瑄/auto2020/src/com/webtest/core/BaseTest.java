@@ -35,7 +35,7 @@ import com.webtest.utils.ReadProperties;
 public class BaseTest {
 
 	public  WebDriverEngine webtest;
-	private WebDriver driver;
+	protected WebDriver driver;
 	public String driverType;
 
 	
@@ -70,7 +70,7 @@ public class BaseTest {
 
 	/**
 	 * 
-	 *��ʼ�������
+	 *锟斤拷始锟斤拷锟斤拷锟斤拷锟�
 	 * 
 	 */
 

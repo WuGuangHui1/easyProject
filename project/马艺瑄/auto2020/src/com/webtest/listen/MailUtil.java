@@ -18,7 +18,7 @@ public class MailUtil {
 	public  void mail(String text) throws IOException {
 		String sender="myx10969@126.com";
 //		
-		String auth_code="PROMXAGTFIVOGYQB";
+		String auth_code="YDWQGKZHBUXNMCSF";
 		String address=ReadProperties.getPropertyValue("tomail");
 		String[] to=address.split(",");
 		Properties props=new Properties();
