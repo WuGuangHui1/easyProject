@@ -1,0 +1,908 @@
+<html xmlns:math="http://exslt.org/math" xmlns:testng="http://testng.org">
+   <head>
+      <title>TestNG Results</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <meta http-equiv="pragma" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="max-age=0"></meta>
+      <meta http-equiv="cache-control" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="no-store"></meta>
+      <LINK rel="stylesheet" href="style.css"></LINK>
+      <script type="text/javascript" src="main.js"></script>
+   </head>
+   <body>
+      <table width="100%" style="font-size: 16px; margin-bottom: 10px;" cellspacing="1">
+         <tr>
+            <td width="100%">
+               Test case
+               
+               <b>Default test</b>
+            </td>
+            <td style="background-color: #FFBBBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">0</div>
+            </td>
+            <td style="background-color: lightgreen; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">8</div>
+            </td>
+            <td style="background-color: #FFFFBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">0</div>
+            </td>
+            <td align="center" style="background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">8</div>
+            </td>
+            <td align="center"
+                style="font-weight: bold; background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">100%</div>
+            </td>
+         </tr>
+      </table>
+      <div style="width: 200px;">
+         <label for="groupMethodsCheckBox" style="font-weight: bold; margin: 0;">
+            <input id="groupMethodsCheckBox" type="checkbox" onclick="switchTestMethodsView(this)"></input>
+            Group by class
+            
+         </label>
+         <br></br>
+         <label for="methodsFilter_ALL" style="font-weight: bold; margin: 0;">
+            <input id="methodsFilter_ALL" type="checkbox"
+                   onclick="testMethodsFilterChanged(this, 'ALL')"></input>
+            All
+            
+         </label>
+      </div>
+      <label for="methodsFilter_FAIL" style="margin-left: 20px;">
+         <input id="methodsFilter_FAIL" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'FAIL')"
+                checked=""></input>
+         Failed
+         
+      </label>
+      <label for="methodsFilter_PASS">
+         <input id="methodsFilter_PASS" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'PASS')"
+                checked=""></input>
+         Passed
+         
+      </label>
+      <label for="methodsFilter_SKIP">
+         <input id="methodsFilter_SKIP" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'SKIP')"
+                checked=""></input>
+         Skipped
+         
+      </label>
+      <label for="methodsFilter_CONF">
+         <input id="methodsFilter_CONF" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'CONF')"></input>
+         Config
+         
+      </label>
+      <br></br>
+      <div id="testMethodsByStatus">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="com.webtest.demo.Admin_View_doBeforeClass_byStatus_passed_PASS1_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_doBeforeClass_byStatus_passed_PASS1_details')">doBeforeClass()</a>
+               </td>
+               <td nowrap="true">08:31:38</td>
+               <td nowrap="true" align="right">3s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_doBeforeClass_byStatus_passed_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>doBeforeClass
+                     </div>
+                     <div>
+                        <b>Signature: </b>doBeforeClass()[pri:0, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:31:38
+                     </div>
+                     <div>
+                        <b>End time: </b>08:31:42
+                     </div>
+                     <div>
+                        <b>Duration: </b>3s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testLogin_byStatus_passed_PASS2_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testLogin_byStatus_passed_PASS2_details')">testLogin(admin
+                     
+                     ,
+                     
+                     admin123)
+                  </a>
+               </td>
+               <td nowrap="true">08:31:42</td>
+               <td nowrap="true" align="right">20s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testLogin_byStatus_passed_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testLogin
+                     </div>
+                     <div>
+                        <b>Signature: </b>testLogin(java.lang.String, java.lang.String)[pri:1, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
+                        admin
+                        
+                        ,
+                        
+                        admin123
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:31:42
+                     </div>
+                     <div>
+                        <b>End time: </b>08:32:03
+                     </div>
+                     <div>
+                        <b>Duration: </b>20s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewData_byStatus_passed_PASS3_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewData_byStatus_passed_PASS3_details')">testViewData()</a>
+               </td>
+               <td nowrap="true">08:32:03</td>
+               <td nowrap="true" align="right">32s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewData_byStatus_passed_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewData
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewData()[pri:2, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:32:03
+                     </div>
+                     <div>
+                        <b>End time: </b>08:32:35
+                     </div>
+                     <div>
+                        <b>Duration: </b>32s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewTitle_byStatus_passed_PASS4_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewTitle_byStatus_passed_PASS4_details')">testViewTitle()</a>
+               </td>
+               <td nowrap="true">08:32:35</td>
+               <td nowrap="true" align="right">25s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewTitle_byStatus_passed_PASS4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewTitle
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewTitle()[pri:3, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:32:35
+                     </div>
+                     <div>
+                        <b>End time: </b>08:33:01
+                     </div>
+                     <div>
+                        <b>Duration: </b>25s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewIntegral_byStatus_passed_PASS5_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewIntegral_byStatus_passed_PASS5_details')">testViewIntegral()</a>
+               </td>
+               <td nowrap="true">08:33:01</td>
+               <td nowrap="true" align="right">35s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewIntegral_byStatus_passed_PASS5_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewIntegral
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewIntegral()[pri:4, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:33:01
+                     </div>
+                     <div>
+                        <b>End time: </b>08:33:36
+                     </div>
+                     <div>
+                        <b>Duration: </b>35s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewTopic_byStatus_passed_PASS6_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewTopic_byStatus_passed_PASS6_details')">testViewTopic()</a>
+               </td>
+               <td nowrap="true">08:33:36</td>
+               <td nowrap="true" align="right">2s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewTopic_byStatus_passed_PASS6_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewTopic
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewTopic()[pri:4, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:33:36
+                     </div>
+                     <div>
+                        <b>End time: </b>08:33:38
+                     </div>
+                     <div>
+                        <b>Duration: </b>2s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewLeaderboard_byStatus_passed_PASS7_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewLeaderboard_byStatus_passed_PASS7_details')">testViewLeaderboard()</a>
+               </td>
+               <td nowrap="true">08:33:38</td>
+               <td nowrap="true" align="right">23s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewLeaderboard_byStatus_passed_PASS7_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewLeaderboard
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewLeaderboard()[pri:5, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:33:38
+                     </div>
+                     <div>
+                        <b>End time: </b>08:34:02
+                     </div>
+                     <div>
+                        <b>Duration: </b>23s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewNotice_byStatus_passed_PASS8_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewNotice_byStatus_passed_PASS8_details')">testViewNotice()</a>
+               </td>
+               <td nowrap="true">08:34:02</td>
+               <td nowrap="true" align="right">38s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewNotice_byStatus_passed_PASS8_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewNotice
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewNotice()[pri:6, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:34:02
+                     </div>
+                     <div>
+                        <b>End time: </b>08:34:40
+                     </div>
+                     <div>
+                        <b>Duration: </b>38s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewFavorites_byStatus_passed_PASS9_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewFavorites_byStatus_passed_PASS9_details')">testViewFavorites()</a>
+               </td>
+               <td nowrap="true">08:34:40</td>
+               <td nowrap="true" align="right">23s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewFavorites_byStatus_passed_PASS9_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewFavorites
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewFavorites()[pri:7, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:34:40
+                     </div>
+                     <div>
+                        <b>End time: </b>08:35:04
+                     </div>
+                     <div>
+                        <b>Duration: </b>23s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_doAfterMethod_byStatus_passed_PASS10_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_doAfterMethod_byStatus_passed_PASS10_details')">doAfterMethod()</a>
+               </td>
+               <td nowrap="true">08:35:04</td>
+               <td nowrap="true" align="right">517 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_doAfterMethod_byStatus_passed_PASS10_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>doAfterMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>doAfterMethod()[pri:0, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:35:04
+                     </div>
+                     <div>
+                        <b>End time: </b>08:35:04
+                     </div>
+                     <div>
+                        <b>Duration: </b>517 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+      </div>
+      <div id="testMethodsByClass" style="display: none;">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr>
+               <td colspan="4">
+                  <h3 style="display: inline;">com.webtest.demo.Admin_View</h3>
+               </td>
+            </tr>
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="com.webtest.demo.Admin_View_doBeforeClass_byClass_PASS1_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_doBeforeClass_byClass_PASS1_details')">doBeforeClass()</a>
+               </td>
+               <td nowrap="true">08:31:38</td>
+               <td nowrap="true" align="right">3s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_doBeforeClass_byClass_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>doBeforeClass
+                     </div>
+                     <div>
+                        <b>Signature: </b>doBeforeClass()[pri:0, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:31:38
+                     </div>
+                     <div>
+                        <b>End time: </b>08:31:42
+                     </div>
+                     <div>
+                        <b>Duration: </b>3s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testLogin_byClass_PASS2_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testLogin_byClass_PASS2_details')">testLogin(admin
+                     
+                     ,
+                     
+                     admin123)
+                  </a>
+               </td>
+               <td nowrap="true">08:31:42</td>
+               <td nowrap="true" align="right">20s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testLogin_byClass_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testLogin
+                     </div>
+                     <div>
+                        <b>Signature: </b>testLogin(java.lang.String, java.lang.String)[pri:1, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
+                        admin
+                        
+                        ,
+                        
+                        admin123
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:31:42
+                     </div>
+                     <div>
+                        <b>End time: </b>08:32:03
+                     </div>
+                     <div>
+                        <b>Duration: </b>20s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewData_byClass_PASS3_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewData_byClass_PASS3_details')">testViewData()</a>
+               </td>
+               <td nowrap="true">08:32:03</td>
+               <td nowrap="true" align="right">32s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewData_byClass_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewData
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewData()[pri:2, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:32:03
+                     </div>
+                     <div>
+                        <b>End time: </b>08:32:35
+                     </div>
+                     <div>
+                        <b>Duration: </b>32s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewTitle_byClass_PASS4_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewTitle_byClass_PASS4_details')">testViewTitle()</a>
+               </td>
+               <td nowrap="true">08:32:35</td>
+               <td nowrap="true" align="right">25s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewTitle_byClass_PASS4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewTitle
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewTitle()[pri:3, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:32:35
+                     </div>
+                     <div>
+                        <b>End time: </b>08:33:01
+                     </div>
+                     <div>
+                        <b>Duration: </b>25s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewIntegral_byClass_PASS5_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewIntegral_byClass_PASS5_details')">testViewIntegral()</a>
+               </td>
+               <td nowrap="true">08:33:01</td>
+               <td nowrap="true" align="right">35s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewIntegral_byClass_PASS5_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewIntegral
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewIntegral()[pri:4, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:33:01
+                     </div>
+                     <div>
+                        <b>End time: </b>08:33:36
+                     </div>
+                     <div>
+                        <b>Duration: </b>35s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewTopic_byClass_PASS6_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewTopic_byClass_PASS6_details')">testViewTopic()</a>
+               </td>
+               <td nowrap="true">08:33:36</td>
+               <td nowrap="true" align="right">2s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewTopic_byClass_PASS6_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewTopic
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewTopic()[pri:4, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:33:36
+                     </div>
+                     <div>
+                        <b>End time: </b>08:33:38
+                     </div>
+                     <div>
+                        <b>Duration: </b>2s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewLeaderboard_byClass_PASS7_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewLeaderboard_byClass_PASS7_details')">testViewLeaderboard()</a>
+               </td>
+               <td nowrap="true">08:33:38</td>
+               <td nowrap="true" align="right">23s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewLeaderboard_byClass_PASS7_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewLeaderboard
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewLeaderboard()[pri:5, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:33:38
+                     </div>
+                     <div>
+                        <b>End time: </b>08:34:02
+                     </div>
+                     <div>
+                        <b>Duration: </b>23s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewNotice_byClass_PASS8_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewNotice_byClass_PASS8_details')">testViewNotice()</a>
+               </td>
+               <td nowrap="true">08:34:02</td>
+               <td nowrap="true" align="right">38s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewNotice_byClass_PASS8_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewNotice
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewNotice()[pri:6, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:34:02
+                     </div>
+                     <div>
+                        <b>End time: </b>08:34:40
+                     </div>
+                     <div>
+                        <b>Duration: </b>38s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_testViewFavorites_byClass_PASS9_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_testViewFavorites_byClass_PASS9_details')">testViewFavorites()</a>
+               </td>
+               <td nowrap="true">08:34:40</td>
+               <td nowrap="true" align="right">23s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_testViewFavorites_byClass_PASS9_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>testViewFavorites
+                     </div>
+                     <div>
+                        <b>Signature: </b>testViewFavorites()[pri:7, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:34:40
+                     </div>
+                     <div>
+                        <b>End time: </b>08:35:04
+                     </div>
+                     <div>
+                        <b>Duration: </b>23s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.webtest.demo.Admin_View_doAfterMethod_byClass_PASS10_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.webtest.demo.Admin_View_doAfterMethod_byClass_PASS10_details')">doAfterMethod()</a>
+               </td>
+               <td nowrap="true">08:35:04</td>
+               <td nowrap="true" align="right">517 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.webtest.demo.Admin_View_doAfterMethod_byClass_PASS10_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>doAfterMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>doAfterMethod()[pri:0, instance:com.webtest.demo.Admin_View@3224f60b]
+                     </div>
+                     <div>
+                        <b>Start time: </b>08:35:04
+                     </div>
+                     <div>
+                        <b>End time: </b>08:35:04
+                     </div>
+                     <div>
+                        <b>Duration: </b>517 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+         <br></br>
+      </div>
+      <div style="margin-top: 15px; color: gray; text-align: center; font-size: 9px;">
+         Generated with
+         
+         <a href="http://code.google.com/p/testng-xslt/" style="color: #8888aa;"
+            target="_blank">
+            TestNG XSLT
+            
+         </a>
+      </div>
+   </body>
+</html>

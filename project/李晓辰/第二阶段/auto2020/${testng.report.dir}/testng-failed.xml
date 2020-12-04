@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [s1]">
+  <test thread-count="5" name="t2(failed)">
+    <classes>
+      <class name="com.webtest.demo.Admin_View">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="testViewFavorites"/>
+          <include name="testViewNotice"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.demo.Admin_View -->
+    </classes>
+  </test> <!-- t2(failed) -->
+</suite> <!-- Failed suite [s1] -->

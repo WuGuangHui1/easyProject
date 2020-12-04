@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="s1" duration-ms="242784" started-at="2020-12-02T17:44:47 CST" finished-at="2020-12-02T17:48:49 CST">
+    <groups>
+    </groups>
+    <test name="t2" duration-ms="242784" started-at="2020-12-02T17:44:47 CST" finished-at="2020-12-02T17:48:49 CST">
+      <class name="com.webtest.demo.Admin_Login">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Admin_Login@174d20a]" name="doBeforeClass" is-config="true" duration-ms="3074" started-at="2020-12-02T17:44:47 CST" finished-at="2020-12-02T17:44:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.Admin_Login@174d20a]" name="testLogin" duration-ms="21715" started-at="2020-12-02T17:44:50 CST" data-provider="excel" finished-at="2020-12-02T17:45:12 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testOut()[pri:2, instance:com.webtest.demo.Admin_Login@174d20a]" name="testOut" duration-ms="15670" started-at="2020-12-02T17:45:12 CST" finished-at="2020-12-02T17:45:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOut -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.Admin_Login@174d20a]" name="doAfterMethod" is-config="true" duration-ms="673" started-at="2020-12-02T17:45:27 CST" finished-at="2020-12-02T17:45:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.Admin_Login -->
+      <class name="com.webtest.demo.Admin_View">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Admin_View@66d2e7d9]" name="doBeforeClass" is-config="true" duration-ms="2357" started-at="2020-12-02T17:45:28 CST" finished-at="2020-12-02T17:45:31 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:1, instance:com.webtest.demo.Admin_View@66d2e7d9]" name="testLogin" duration-ms="21690" started-at="2020-12-02T17:45:31 CST" data-provider="excel" finished-at="2020-12-02T17:45:52 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testViewData()[pri:2, instance:com.webtest.demo.Admin_View@66d2e7d9]" name="testViewData" duration-ms="31206" started-at="2020-12-02T17:45:52 CST" finished-at="2020-12-02T17:46:23 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewData -->
+        <test-method status="PASS" signature="testViewTitle()[pri:3, instance:com.webtest.demo.Admin_View@66d2e7d9]" name="testViewTitle" duration-ms="25162" started-at="2020-12-02T17:46:23 CST" finished-at="2020-12-02T17:46:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewTitle -->
+        <test-method status="PASS" signature="testViewIntegral()[pri:4, instance:com.webtest.demo.Admin_View@66d2e7d9]" name="testViewIntegral" duration-ms="35660" started-at="2020-12-02T17:46:49 CST" finished-at="2020-12-02T17:47:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewIntegral -->
+        <test-method status="PASS" signature="testViewTopic()[pri:4, instance:com.webtest.demo.Admin_View@66d2e7d9]" name="testViewTopic" duration-ms="2010" started-at="2020-12-02T17:47:24 CST" finished-at="2020-12-02T17:47:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewTopic -->
+        <test-method status="PASS" signature="testViewLeaderboard()[pri:5, instance:com.webtest.demo.Admin_View@66d2e7d9]" name="testViewLeaderboard" duration-ms="21013" started-at="2020-12-02T17:47:26 CST" finished-at="2020-12-02T17:47:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewLeaderboard -->
+        <test-method status="PASS" signature="testViewNotice()[pri:6, instance:com.webtest.demo.Admin_View@66d2e7d9]" name="testViewNotice" duration-ms="38680" started-at="2020-12-02T17:47:47 CST" finished-at="2020-12-02T17:48:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewNotice -->
+        <test-method status="PASS" signature="testViewFavorites()[pri:7, instance:com.webtest.demo.Admin_View@66d2e7d9]" name="testViewFavorites" duration-ms="22997" started-at="2020-12-02T17:48:26 CST" finished-at="2020-12-02T17:48:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewFavorites -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.Admin_View@66d2e7d9]" name="doAfterMethod" is-config="true" duration-ms="502" started-at="2020-12-02T17:48:49 CST" finished-at="2020-12-02T17:48:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.Admin_View -->
+    </test> <!-- t2 -->
+  </suite> <!-- s1 -->
+</testng-results>
