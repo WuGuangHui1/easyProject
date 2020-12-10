@@ -1,4 +1,4 @@
-package com.webtest.smoketest.testcases.dxy;
+package com.webtest.utils.dxy;
 
 import java.awt.AWTException;
 import java.awt.Robot;
