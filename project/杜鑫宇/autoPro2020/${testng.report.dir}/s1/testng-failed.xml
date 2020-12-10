@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [s1]">
+  <listeners>
+    <listener class-name="com.webtest.freemarker.GenerateReporter"/>
+  </listeners>
+  <test thread-count="5" name="t1(failed)">
+    <classes>
+      <class name="com.smoketest.testcases.controller.LabelsandInfoTest">
+        <methods>
+          <include name="test_showGroupInfo"/>
+          <include name="test_addGroupInfo"/>
+          <include name="doAfterMethod"/>
+          <include name="test_showGroupLabel"/>
+          <include name="doBeforeClass"/>
+          <include name="openUrl"/>
+        </methods>
+      </class> <!-- com.smoketest.testcases.controller.LabelsandInfoTest -->
+    </classes>
+  </test> <!-- t1(failed) -->
+</suite> <!-- Failed suite [s1] -->

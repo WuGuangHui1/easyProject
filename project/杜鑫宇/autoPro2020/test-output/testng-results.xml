@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="136610" started-at="2020-12-10T09:10:34 CST" finished-at="2020-12-10T09:12:50 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="136610" started-at="2020-12-10T09:10:34 CST" finished-at="2020-12-10T09:12:50 CST">
+      <class name="com.webtest.smoketest.testcases.dxy.CertifiManagementTest">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.smoketest.testcases.dxy.CertifiManagementTest@22a67b4]" name="doBeforeClass" is-config="true" duration-ms="7404" started-at="2020-12-10T09:10:34 CST" finished-at="2020-12-10T09:10:41 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="openUrl()[pri:0, instance:com.webtest.smoketest.testcases.dxy.CertifiManagementTest@22a67b4]" name="openUrl" is-config="true" duration-ms="9480" started-at="2020-12-10T09:10:41 CST" finished-at="2020-12-10T09:10:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method status="PASS" signature="test_correct_display()[pri:0, instance:com.webtest.smoketest.testcases.dxy.CertifiManagementTest@22a67b4]" name="test_correct_display" duration-ms="10317" started-at="2020-12-10T09:10:50 CST" description="正确显示&#039;认证类型&#039;列表界面" finished-at="2020-12-10T09:11:01 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_correct_display -->
+        <test-method status="PASS" signature="test_setAuthCondition()[pri:1, instance:com.webtest.smoketest.testcases.dxy.CertifiManagementTest@22a67b4]" name="test_setAuthCondition" duration-ms="19289" started-at="2020-12-10T09:11:01 CST" description="&#039;设置&#039;认证条件" depends-on-methods="com.webtest.smoketest.testcases.dxy.CertifiManagementTest.test_correct_display" finished-at="2020-12-10T09:11:20 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_setAuthCondition -->
+        <test-method status="PASS" signature="test_setAuthField()[pri:2, instance:com.webtest.smoketest.testcases.dxy.CertifiManagementTest@22a67b4]" name="test_setAuthField" duration-ms="32103" started-at="2020-12-10T09:11:20 CST" description="&#039;设置&#039;认证字段" depends-on-methods="com.webtest.smoketest.testcases.dxy.CertifiManagementTest.test_correct_display" finished-at="2020-12-10T09:11:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_setAuthField -->
+        <test-method status="PASS" signature="test_edit()[pri:3, instance:com.webtest.smoketest.testcases.dxy.CertifiManagementTest@22a67b4]" name="test_edit" duration-ms="30109" started-at="2020-12-10T09:11:52 CST" description="操作中‘编辑’" depends-on-methods="com.webtest.smoketest.testcases.dxy.CertifiManagementTest.test_correct_display" finished-at="2020-12-10T09:12:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_edit -->
+        <test-method status="PASS" signature="test_correct_displayUserInfo()[pri:4, instance:com.webtest.smoketest.testcases.dxy.CertifiManagementTest@22a67b4]" name="test_correct_displayUserInfo" duration-ms="10283" started-at="2020-12-10T09:12:22 CST" description="正确显示&#039;认证用户列表&#039;界面" finished-at="2020-12-10T09:12:33 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_correct_displayUserInfo -->
+        <test-method status="PASS" signature="test_approveSuccess()[pri:5, instance:com.webtest.smoketest.testcases.dxy.CertifiManagementTest@22a67b4]" name="test_approveSuccess" duration-ms="10581" started-at="2020-12-10T09:12:33 CST" description="通过审核" depends-on-methods="com.webtest.smoketest.testcases.dxy.CertifiManagementTest.test_correct_displayUserInfo" finished-at="2020-12-10T09:12:43 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_approveSuccess -->
+        <test-method status="PASS" signature="test_approveFailed()[pri:6, instance:com.webtest.smoketest.testcases.dxy.CertifiManagementTest@22a67b4]" name="test_approveFailed" duration-ms="6237" started-at="2020-12-10T09:12:43 CST" description="审核失败/禁用" depends-on-methods="com.webtest.smoketest.testcases.dxy.CertifiManagementTest.test_approveSuccess" finished-at="2020-12-10T09:12:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_approveFailed -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.smoketest.testcases.dxy.CertifiManagementTest@22a67b4]" name="doAfterMethod" is-config="true" duration-ms="771" started-at="2020-12-10T09:12:49 CST" finished-at="2020-12-10T09:12:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.smoketest.testcases.dxy.CertifiManagementTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
