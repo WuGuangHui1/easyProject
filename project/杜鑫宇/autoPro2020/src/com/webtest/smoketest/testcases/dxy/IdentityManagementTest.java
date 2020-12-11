@@ -6,6 +6,8 @@ import java.awt.AWTException;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -69,6 +71,7 @@ public class IdentityManagementTest extends BaseTest {
 		// 单击 下一步
 		webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div/div[2]/div/form/button");
 		// 确定提示框
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 		// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -101,6 +104,7 @@ public class IdentityManagementTest extends BaseTest {
 		webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[4]/div/button[1]");
 		Thread.sleep(1500);
 		// 确定提示框
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 		// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -115,6 +119,7 @@ public class IdentityManagementTest extends BaseTest {
 			Thread.sleep(1000);
 			webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[4]/div/button[1]");
 			// 确定提示框
+			new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 			driver.switchTo().alert().accept();
 			Thread.sleep(1000);
 			// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -132,6 +137,7 @@ public class IdentityManagementTest extends BaseTest {
 				Thread.sleep(1000);
 				webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[4]/div/button[1]");
 				// 确定提示框
+				new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 				driver.switchTo().alert().accept();
 				Thread.sleep(1000);
 				// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -153,6 +159,7 @@ public class IdentityManagementTest extends BaseTest {
 		// 单击 禁用
 		webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[4]/div/button[2]");
 		Thread.sleep(1500);
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 		// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -166,6 +173,7 @@ public class IdentityManagementTest extends BaseTest {
 					"xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[6]/table/tbody/tr[1]/td[1]/input");
 			Thread.sleep(1000);
 			webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[4]/div/button[2]");
+			new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 			driver.switchTo().alert().accept();
 			Thread.sleep(1000);
 			// 定位 弹窗元素，获取弹窗内文本信息内容出
@@ -182,6 +190,7 @@ public class IdentityManagementTest extends BaseTest {
 						"xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[6]/table/tbody/tr[2]/td[1]/input");
 				Thread.sleep(1000);
 				webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[4]/div/button[2]");
+				new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 				driver.switchTo().alert().accept();
 				Thread.sleep(1000);
 				// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -199,6 +208,7 @@ public class IdentityManagementTest extends BaseTest {
 					Thread.sleep(1000);
 					webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[4]/div/button[2]");
 					Thread.sleep(1000);
+					new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 					driver.switchTo().alert().accept();
 					Thread.sleep(1000);
 					// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -293,6 +303,7 @@ public class IdentityManagementTest extends BaseTest {
 		Thread.sleep(1000);
 		webtest.click("xpath=//*[@id='submit']");
 		Thread.sleep(1500);
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 		// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -307,14 +318,12 @@ public class IdentityManagementTest extends BaseTest {
 	public void test_correct_displayIDlist() throws InterruptedException {
 		driver.navigate().refresh();
 		// 先悬停在子菜单上,然后再操作子菜单的选项
-		WebElement parentMenu = webtest.getElementByXpath("/html/body/header/nav/div/ul[1]/li[2]/a");
+		WebElement parentMenu = webtest.getElementByXpath("//ul[@class='nav navbar-nav top-menu']/li[2]/a");
 		Actions action = new Actions(driver);
 		action.moveToElement(parentMenu).perform();
-		Thread.sleep(3000);
-		WebElement subMenu = webtest
-				.getElementByXpath("/html/body/header/nav/div/ul[1]/li[2]/ul/li/div/div/div[3]/ul/li[4]");
-		Thread.sleep(3000);
-		subMenu.click();
+		Thread.sleep(1500);
+		WebElement subMenu = webtest.getElementByXpath("/html/body/header/nav/div/ul[1]/li[2]/ul/li/div/div/div[3]/ul/li[4]/a");
+		action.moveToElement(subMenu).click().perform();
 		Thread.sleep(3000);
 		assertTrue(webtest.isTextPresent("身份用户列表"), "页面显示失败");
 	}

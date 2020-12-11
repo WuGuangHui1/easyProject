@@ -3,14 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.smoketest.testcases.controller.LabelsandInfoTest">
+      <class name="com.webtest.smoketest.testcases.dxy.LabelsandInfoTest">
         <methods>
+          <include name="test_showGroupInfo"/>
+          <include name="test_addGroupInfo"/>
           <include name="doAfterMethod"/>
-          <include name="test_showGroupLabel"/>
           <include name="doBeforeClass"/>
           <include name="openUrl"/>
         </methods>
-      </class> <!-- com.smoketest.testcases.controller.LabelsandInfoTest -->
+      </class> <!-- com.webtest.smoketest.testcases.dxy.LabelsandInfoTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

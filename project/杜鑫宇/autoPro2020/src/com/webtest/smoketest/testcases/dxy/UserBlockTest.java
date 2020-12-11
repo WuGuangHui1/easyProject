@@ -3,6 +3,8 @@ package com.webtest.smoketest.testcases.dxy;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -51,6 +53,7 @@ public class UserBlockTest extends BaseTest {
 		webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[2]/form/div[2]/button[1]");
 		Thread.sleep(1000);
 		// 确定提示框
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 		// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -73,6 +76,7 @@ public class UserBlockTest extends BaseTest {
 		// 单击“重置密码”
 		webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[4]/table/tbody/tr[1]/td[5]/a[4]");
 		Thread.sleep(2000);
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 		// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -101,6 +105,7 @@ public class UserBlockTest extends BaseTest {
 		webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[3]/div[1]/button[2]");
 		Thread.sleep(1500);
 		// 确定提示框
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(2000);
 		// 选择禁用天数
@@ -135,6 +140,7 @@ public class UserBlockTest extends BaseTest {
 		// 单击“启用”
 		webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[3]/div[1]/button[1]");
 		Thread.sleep(1500);
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 		// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -162,6 +168,7 @@ public class UserBlockTest extends BaseTest {
 		webtest.click("xpath=/html/body/div[3]/div/div/form/button/a");
 		Thread.sleep(1500);
 		// 确定提示框
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(3000);
 		assertTrue(webtest.isTextPresent("选择用户分组"), "页面显示失败，操作有误");
@@ -177,6 +184,7 @@ public class UserBlockTest extends BaseTest {
 		// 单击“修改第三方登录邮箱后缀”按钮
 		webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[3]/div[1]/button[5]");
 		// 确定提示框
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 		// 定位 弹窗元素，获取弹窗内文本信息内容
