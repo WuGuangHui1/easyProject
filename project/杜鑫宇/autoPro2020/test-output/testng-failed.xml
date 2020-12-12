@@ -3,15 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.webtest.smoketest.testcases.dxy.LabelsandInfoTest">
+      <class name="com.webtest.smoketest.testcases.dxy.UserConfigurationTest">
         <methods>
-          <include name="test_showGroupInfo"/>
-          <include name="test_addGroupInfo"/>
+          <include name="test_userBasicConfigu"/>
+          <include name="test_smsConfigu"/>
+          <include name="openUrl"/>
+          <include name="test_basicConfigu"/>
           <include name="doAfterMethod"/>
           <include name="doBeforeClass"/>
-          <include name="openUrl"/>
+          <include name="test_register"/>
+          <include name="test_emailActivation"/>
+          <include name="test_emailVerify"/>
+          <include name="test_login"/>
         </methods>
-      </class> <!-- com.webtest.smoketest.testcases.dxy.LabelsandInfoTest -->
+      </class> <!-- com.webtest.smoketest.testcases.dxy.UserConfigurationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -4,6 +4,8 @@ import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -62,6 +64,7 @@ public class CertifiManagementTest extends BaseTest {
 		webtest.click("xpath=//*[@id='submit']");
 		Thread.sleep(3000);
 		// 确定提示框
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 		// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -94,6 +97,7 @@ public class CertifiManagementTest extends BaseTest {
 				"xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[3]/div/div/form/div[9]/input", "身份证");
 		webtest.click("xpath=//*[@id='submit']");
 		Thread.sleep(3000);
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 		// 定位 弹窗元素，获取弹窗内文本信息内容
@@ -120,8 +124,8 @@ public class CertifiManagementTest extends BaseTest {
 		webtest.typeAndClear(
 				"xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[3]/div/div/form/div[4]/input",
 				"小提示：真实身份，易于被辨识 更加权威，提高可信度");
-		Thread.sleep(3000);
-		// 进入子界面, 双引号中的用iframe标签的Id或name来定位
+		Thread.sleep(3500);
+		// 进入子界面, 双引号中的用iframe标签的Id或name来定位//*[@id="ueditor_0"]
 		driver.switchTo().frame("ueditor_0");
 		webtest.click("xpath=/html/body");
 		webtest.type("xpath=/html/body", "<br/>" + "7.信息必须真实");
@@ -163,6 +167,7 @@ public class CertifiManagementTest extends BaseTest {
 		webtest.click("xpath=/html/body/div[1]/div/div/section[2]/div/div[2]/div/div[4]/div/button[1]");
 		Thread.sleep(1500);
 		// 确定提示框
+		new WebDriverWait(driver, 6).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 		// 定位 弹窗元素，获取弹窗内文本信息内容
