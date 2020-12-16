@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [s1]">
+  <listeners>
+    <listener class-name="com.webtest.listen.JavaMailTestListener"/>
+  </listeners>
+  <test thread-count="5" name="t2(failed)">
+    <classes>
+      <class name="com.webtest.lxc.Admin_Weibo">
+        <methods>
+          <include name="testCommentReply"/>
+          <include name="doAfterMethod"/>
+          <include name="testCommentLike"/>
+          <include name="testCommentUnLike"/>
+          <include name="doBeforeClass"/>
+          <include name="testComment"/>
+        </methods>
+      </class> <!-- com.webtest.lxc.Admin_Weibo -->
+      <class name="com.webtest.myx.linkfriend">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="test6"/>
+          <include name="doBeforeClass"/>
+          <include name="test7"/>
+        </methods>
+      </class> <!-- com.webtest.myx.linkfriend -->
+      <class name="com.webtest.myx.memeimg">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="test74"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.myx.memeimg -->
+      <class name="com.webtest.jxy.Browse_Test">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="test_all_bigphoto"/>
+          <include name="test_show_time"/>
+          <include name="test_next_bigphoto"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.jxy.Browse_Test -->
+      <class name="com.webtest.dxy.IdentityManagementTest">
+        <methods>
+          <include name="test_correct_displaylist"/>
+          <include name="doAfterMethod"/>
+          <include name="test_restart"/>
+          <include name="test_addGroup"/>
+          <include name="test_disableUsing"/>
+          <include name="test_startUsing"/>
+          <include name="test_addIdentity"/>
+          <include name="test_initUserId"/>
+          <include name="doBeforeClass"/>
+          <include name="test_disable"/>
+          <include name="test_correct_displayIDlist"/>
+        </methods>
+      </class> <!-- com.webtest.dxy.IdentityManagementTest -->
+      <class name="com.webtest.dxy.LabelsandInfoTest">
+        <methods>
+          <include name="test_showGroupInfo"/>
+          <include name="test_addGroupInfo"/>
+          <include name="doAfterMethod"/>
+          <include name="test_showGroupLabel"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.dxy.LabelsandInfoTest -->
+      <class name="com.webtest.lxc.Admin_Switch">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="testToFront"/>
+          <include name="testToBack"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.lxc.Admin_Switch -->
+      <class name="com.webtest.jxy.Topic_Test">
+        <methods>
+          <include name="test_recommend_topic"/>
+          <include name="doAfterMethod"/>
+          <include name="test_manage_host_topic"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.jxy.Topic_Test -->
+      <class name="com.webtest.wgh.DashBoardDemo">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="test4"/>
+          <include name="test6"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.wgh.DashBoardDemo -->
+      <class name="com.webtest.dxy.UserBlockTest">
+        <methods>
+          <include name="test_ModifyEmailSuffix"/>
+          <include name="test_grant"/>
+          <include name="doAfterMethod"/>
+          <include name="test_resetPassword"/>
+          <include name="test_disable"/>
+          <include name="test_selectGroup"/>
+          <include name="doBeforeClass"/>
+          <include name="test_startUsing"/>
+        </methods>
+      </class> <!-- com.webtest.dxy.UserBlockTest -->
+      <class name="com.webtest.wgh.DataViewDemo">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="test10"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.wgh.DataViewDemo -->
+      <class name="com.webtest.wgh.HomePageDemo">
+        <methods>
+          <include name="test26"/>
+          <include name="doAfterMethod"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.wgh.HomePageDemo -->
+      <class name="com.webtest.lxc.Admin_View">
+        <methods>
+          <include name="testViewFavorites"/>
+          <include name="doAfterMethod"/>
+          <include name="testViewNotice"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.lxc.Admin_View -->
+      <class name="com.webtest.dxy.UserConfigurationTest">
+        <methods>
+          <include name="test_emailVerify"/>
+          <include name="doAfterMethod"/>
+          <include name="test_addAuthorityManage"/>
+          <include name="test_authorityManage"/>
+          <include name="test_emailActivation"/>
+          <include name="test_unbundl"/>
+          <include name="test_userBasicConfigu"/>
+          <include name="test_smsConfigu"/>
+          <include name="test_wechatInfo"/>
+          <include name="test_register"/>
+          <include name="test_basicConfigu"/>
+          <include name="test_login"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.dxy.UserConfigurationTest -->
+      <class name="com.webtest.dxy.CertifiManagementTest">
+        <methods>
+          <include name="test_correct_displayUserInfo"/>
+          <include name="doAfterMethod"/>
+          <include name="test_edit"/>
+          <include name="test_approveSuccess"/>
+          <include name="test_setAuthCondition"/>
+          <include name="test_approveFailed"/>
+          <include name="doBeforeClass"/>
+          <include name="test_correct_display"/>
+          <include name="test_setAuthField"/>
+        </methods>
+      </class> <!-- com.webtest.dxy.CertifiManagementTest -->
+      <class name="com.webtest.dxy.TitleManagementTest">
+        <methods>
+          <include name="test_showTitleInfo"/>
+          <include name="test_applyTitle"/>
+          <include name="test_usersList"/>
+          <include name="doAfterMethod"/>
+          <include name="test_addTitle"/>
+          <include name="test_deleteTitle"/>
+          <include name="test_editTitle"/>
+          <include name="test_ifFrontApply"/>
+          <include name="test_allowAction"/>
+          <include name="doBeforeClass"/>
+          <include name="test_relatedTitle"/>
+          <include name="test_showDetailTitles"/>
+        </methods>
+      </class> <!-- com.webtest.dxy.TitleManagementTest -->
+      <class name="com.webtest.lxc.Admin_ChangeData">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="testChangeData3"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.lxc.Admin_ChangeData -->
+      <class name="com.webtest.jxy.Navigator_Test">
+        <methods>
+          <include name="test_attention_find1"/>
+          <include name="doAfterMethod"/>
+          <include name="test_signIn"/>
+          <include name="test_find_identity"/>
+          <include name="test_cancel_attention"/>
+          <include name="doBeforeClass"/>
+          <include name="test_small_page"/>
+        </methods>
+      </class> <!-- com.webtest.jxy.Navigator_Test -->
+      <class name="com.webtest.myx.behaviorlog">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="test63"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.myx.behaviorlog -->
+      <class name="com.webtest.myx.messageSearch">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="test66"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.myx.messageSearch -->
+      <class name="com.webtest.why.website_settings">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="why48test"/>
+          <include name="why38test"/>
+          <include name="wwhy36test"/>
+          <include name="why36test"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.why.website_settings -->
+      <class name="com.webtest.lxc.Admin_FollowsAndFans">
+        <methods>
+          <include name="testChangeFollowName"/>
+          <include name="doAfterMethod"/>
+          <include name="testChangeFanName"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.lxc.Admin_FollowsAndFans -->
+      <class name="com.webtest.jxy.Management_Dynamic_Test">
+        <methods>
+          <include name="test_del_dynamic"/>
+          <include name="test_discuss_reply"/>
+          <include name="test_unlike_com"/>
+          <include name="doAfterMethod"/>
+          <include name="test_like_com"/>
+          <include name="doBeforeClass"/>
+          <include name="test_discuss"/>
+        </methods>
+      </class> <!-- com.webtest.jxy.Management_Dynamic_Test -->
+    </classes>
+  </test> <!-- t2(failed) -->
+</suite> <!-- Failed suite [s1] -->

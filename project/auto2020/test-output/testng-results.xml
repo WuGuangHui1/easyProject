@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50957" started-at="2020-12-14T15:55:53 CST" finished-at="2020-12-14T15:56:44 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="50957" started-at="2020-12-14T15:55:53 CST" finished-at="2020-12-14T15:56:44 CST">
+      <class name="com.webtest.wgh.DashBoardDemo">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.wgh.DashBoardDemo@4bbfb90a]" name="doBeforeClass" is-config="true" duration-ms="5157" started-at="2020-12-14T15:55:53 CST" finished-at="2020-12-14T15:55:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.wgh.DashBoardDemo@4bbfb90a]" name="testLogin" duration-ms="11748" started-at="2020-12-14T15:55:59 CST" data-provider="excel" finished-at="2020-12-14T15:56:11 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="test3()[pri:3, instance:com.webtest.wgh.DashBoardDemo@4bbfb90a]" name="test3" duration-ms="13025" started-at="2020-12-14T15:56:11 CST" finished-at="2020-12-14T15:56:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test4()[pri:4, instance:com.webtest.wgh.DashBoardDemo@4bbfb90a]" name="test4" duration-ms="16504" started-at="2020-12-14T15:56:24 CST" finished-at="2020-12-14T15:56:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test5()[pri:5, instance:com.webtest.wgh.DashBoardDemo@4bbfb90a]" name="test5" duration-ms="12" started-at="2020-12-14T15:56:40 CST" finished-at="2020-12-14T15:56:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="FAIL" signature="test6()[pri:6, instance:com.webtest.wgh.DashBoardDemo@4bbfb90a]" name="test6" duration-ms="3448" started-at="2020-12-14T15:56:40 CST" finished-at="2020-12-14T15:56:44 CST">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Must provide a location for a move action.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Must provide a location for a move action.
+at org.openqa.selenium.interactions.MoveMouseAction.<init>(MoveMouseAction.java:37)
+at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:386)
+at com.webtest.core.WebDriverEngine.mouseToElement(WebDriverEngine.java:306)
+at com.webtest.wgh.DashBoardDemo.test6(DashBoardDemo.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.wgh.DashBoardDemo@4bbfb90a]" name="doAfterMethod" is-config="true" duration-ms="683" started-at="2020-12-14T15:56:44 CST" finished-at="2020-12-14T15:56:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.wgh.DashBoardDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

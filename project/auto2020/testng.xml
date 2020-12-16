@@ -1,0 +1,88 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="s1" verbose="1" parallel="none">
+<listeners>
+		<listener class-name="com.webtest.listen.JavaMailTestListener"></listener>
+	</listeners>
+	<test name="t2" preserve-order="true">
+		<classes>
+<!-- 	  		<class name="com.webtest.jxy.Browse_Test"/>
+			<class name="com.webtest.jxy.Dynamic_test"/>
+			<class name="com.webtest.jxy.Management_Dynamic_Test"/>
+			<class name="com.webtest.jxy.Navigator_Test"/>
+			<class name="com.webtest.jxy.Topic_Test"/>
+				
+	 <class name="com.webtest.lxc.Admin_Certification"/>
+	 <class name="com.webtest.lxc.Admin_ChangAvatar"/>
+	 <class name="com.webtest.lxc.Admin_ChangeData"/>
+	 <class name="com.webtest.lxc.Admin_Changepassword"/>
+	 <class name="com.webtest.lxc.Admin_DomainName"/>
+	 <class name="com.webtest.lxc.Admin_FollowsAndFans"/>
+	 <class name="com.webtest.lxc.Admin_PersonalCover"/>
+	 <class name="com.webtest.lxc.Admin_Search"/>
+	 <class name="com.webtest.lxc.Admin_Switch"/>
+	 <class name="com.webtest.lxc.Admin_UserTag"/>
+	 <class name="com.webtest.lxc.Admin_View"/>
+	 <class name="com.webtest.lxc.Admin_Weibo"/>
+	 
+ 	 <class name="com.webtest.why.database_backup"/>
+	 <class name="com.webtest.why.conversation_list"/>
+	 <class name="com.webtest.why.conversation_model"/>
+	 <class name="com.webtest.why.conversation_settings"/>
+	 <class name="com.webtest.why.news_model"/>
+	 <class name="com.webtest.why.edit_model"/>
+	 <class name="com.webtest.why.user_navigation"/>
+	 <class name="com.webtest.why.website_settings"/>	
+	 
+	  <class name="com.webtest.wgh.ActiveUserDemo"/>
+	  <class name="com.webtest.wgh.AttritionRechargeDemo"/>
+	  <class name="com.webtest.wgh.DashBoardDemo"/>
+	  <class name="com.webtest.wgh.DataViewDemo"/>
+	  <class name="com.webtest.wgh.DynamicrecoveryDemo"/>
+	  <class name="com.webtest.wgh.HomePageDemo"/>
+	  <class name="com.webtest.wgh.IdentityDemo"/>
+	  <class name="com.webtest.wgh.IntoFrontDemo"/>
+	  <class name="com.webtest.wgh.LoginDemo"/>
+	  <class name="com.webtest.wgh.MembersDemo"/>
+	  <class name="com.webtest.wgh.ReplyCommentDemo"/>
+	  <class name="com.webtest.wgh.RetentionDemo"/>
+	  <class name="com.webtest.wgh.RightDemo"/>
+	  <class name="com.webtest.wgh.TopicDemo"/>
+	  <class name="com.webtest.wgh.UserDemo"/>
+      <class name="com.webtest.wgh.WebsitestatisticsDemo"/>
+	  <class name="com.webtest.wgh.WeibodynamicDemo"/>
+      <class name="com.webtest.wgh.WeibomanagementDemo"/> 
+	 
+	 <class name="com.webtest.myx.Admin_Login"/>
+	 <class name="com.webtest.myx.adPosition"/>
+	 <class name="com.webtest.myx.behaviorlog"/>
+	 <class name="com.webtest.myx.invitemanage"/>
+	 <class name="com.webtest.myx.limit"/>
+	 <class name="com.webtest.myx.linkfriend"/>
+	 <class name="com.webtest.myx.LoginDemo"/>
+	 <class name="com.webtest.myx.memeimg"/>
+	 <class name="com.webtest.myx.messageSearch"/>
+	 <class name="com.webtest.myx.pointLog"/>
+	 <class name="com.webtest.myx.pointRule"/>
+	 <class name="com.webtest.myx.pointType"/>
+	 <class name="com.webtest.myx.Public"/>
+	 <class name="com.webtest.myx.sensitiveSetting"/>
+	 <class name="com.webtest.myx.sensitiveword"/>
+	 <class name="com.webtest.myx.SEOrelus"/>	-->
+	 
+	 <class name="com.webtest.dxy.CertifiManagementTest"/>
+	 <class name="com.webtest.dxy.DataActionUtil"/>
+	 <class name="com.webtest.dxy.IdentityManagementTest"/>
+	 <class name="com.webtest.dxy.LabelsandInfoTest"/>
+	 <class name="com.webtest.dxy.TitleManagementTest"/>
+	 <class name="com.webtest.dxy.UserBlockTest"/>
+	 <class name="com.webtest.dxy.UserConfigurationTest"/>
+	 
+	
+			
+		
+			
+		</classes>
+	</test>
+	
+</suite>
